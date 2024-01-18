@@ -1,4 +1,13 @@
+$font-size-base: 16px;
+$font-size-sm: 12px;
+$nav-link-padding-y: 0;
+$nav-link-padding-x: 0;
+$navbar-nav-link-padding-x: 0;
+$navbar-light-active-color: #fff;
+
+
 $bootstrap-icons-font-dir: "./../../../node_modules/bootstrap-icons/font/fonts";
 
 @import "./../../../../node_modules/bootstrap/scss/bootstrap";
 @import "./../../../../node_modules/bootstrap-icons/font/bootstrap-icons";
+

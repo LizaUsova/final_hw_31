@@ -1,0 +1,51 @@
+// @use "bootstrap/scss/bootstrap" as *;
+@use "./../../common/bootstrap-config" as *;
+@use "./../../common/variables" as *;
+
+.header {
+  padding-top: 50px;
+  background-color: #8f919a;
+
+  &-top {
+    margin-bottom: -30px;
+
+    &__wrapper > div:not(:last-child) {
+      display: flex;
+      align-items: center;
+      margin-right: 6px;
+
+      &::after {
+        content: '';
+
+        display: block;
+        margin-left: 6px;
+        width: 6px;
+        border-radius: 50%;
+        height: 6px;
+        background: #fff;
+      }
+    }
+
+    &__lang {
+      &-title {
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        padding: 5px 7px;
+        border-radius: 8px;
+      }
+
+      input:checked + span {
+        background: $accent-color;
+      }
+    }
+  }
+
+  .navbar-nav {
+    margin-bottom: -40px;
+    gap: 15px;
+
+    a {
+      text-transform: lowercase;
+    }
+  }
+}
