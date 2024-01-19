@@ -4,6 +4,7 @@
   background-position: center center; }
 
 @use "extends" as *;
+@use "./variables" as *;
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors

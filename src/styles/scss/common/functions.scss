@@ -1,0 +1,5 @@
+@use "./variables" as *;
+
+@function get_path($path) {
+  @return $assets_path + $path;
+}
