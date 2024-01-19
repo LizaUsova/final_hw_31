@@ -16526,6 +16526,9 @@ body {
 h1, .h1 {
   font-size: 38px; }
 
+h2, .h2 {
+  font-size: 38px; }
+
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
 .header {
@@ -16583,8 +16586,7 @@ h1, .h1 {
   background-size: contain;
   padding-top: 150px;
   height: 100vh;
-  min-height: 400px;
-  position: relative; }
+  min-height: 400px; }
   .banner h1, .banner .h1 {
     position: absolute;
     left: 50%;
@@ -16599,5 +16601,34 @@ h1, .h1 {
     left: 50%;
     transform: translateX(-50%);
     bottom: 30px; }
+
+@use "./../../common/variables" as *;
+@use "./../../common/bootstrap-config" as *;
+.services h2, .services .h2 {
+  color: #F0145A;
+  font-weight: 700;
+  margin-bottom: 60px; }
+.services__service {
+  color: #fff;
+  gap: 30px;
+  flex-direction: column; }
+.services__icon span {
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #fff; }
+.services__title h4, .services__title .h4 {
+  color: #24A3FF;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0; }
+.services__description {
+  font-size: 16px;
+  font-weight: 400; }
+
+@use "./../../common/variables" as *;
+@media (max-width: 556px) {
+  .services h2, .services .h2 {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=home-page.css.map */

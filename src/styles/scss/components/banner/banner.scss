@@ -6,7 +6,6 @@
   padding-top: $header_height;
   height: 100vh;
   min-height: 400px;
-  position: relative;
   //display: flex;
   //align-items: center;
 
@@ -16,9 +15,9 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    color: #fff;
+    color: $color-light;
     text-align: center;
-    font-weight: 700;
+    font-weight: $fw-bold;
     text-transform: capitalize;
   }
 

@@ -1,0 +1,9 @@
+@use "./../../common/variables" as *;
+
+.services {
+  @media (max-width: 556px) {
+    h2 {
+      font-size: $f-ml;
+    }
+  }
+}

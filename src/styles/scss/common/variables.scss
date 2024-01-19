@@ -1,5 +1,26 @@
 $assets_path: './../../assets/pictures/';
+
+$header_height: 150px;
+
+// colors
+$accent-color: #F0145A;
+$color-dark: #000;
+$color-light: #fff;
+
+// for fonts
 $s-serif: sans-serif;
 $font-base: 'montserrat', $s-serif;
-$accent-color: #F0145A;
-$header_height: 150px;
+
+$fw-base: 400;
+$fw-bold: 700;
+
+// font-sizes
+$fs-h1: 38px;
+$fs-h2: 38px;
+$fs-h4: 22px;
+
+//$f-xs: 12px;
+//$f-sm: 14px;
+//$f-md: 16px;
+$f-ml: 30px;
+//$f-lg: 20px;

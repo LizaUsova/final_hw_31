@@ -40,5 +40,9 @@ body {
 }
 
 h1 {
-  font-size: 38px;
+  font-size: $fs-h1;
+}
+
+h2 {
+  font-size: $fs-h1;
 }
