@@ -1,14 +1,16 @@
-// @use "bootstrap/scss/bootstrap" as *;
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
 
 .header {
   padding-top: 50px;
-  background-color: #8f919a;
   width: 100%;
+  max-height: $header-height;
+  height: $header-height;
+  z-index: 2;
 
   &-top {
     margin-bottom: -30px;
+    z-index: 1;
 
     &__wrapper > div:not(:last-child) {
       display: flex;

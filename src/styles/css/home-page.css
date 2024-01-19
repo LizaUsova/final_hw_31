@@ -1,4 +1,9 @@
 @charset "UTF-8";
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+@use "extends" as *;
 /*!
  * Bootstrap  v5.3.2 (https://getbootstrap.com/)
  * Copyright 2011-2023 The Bootstrap Authors
@@ -16492,14 +16497,45 @@ body {
   box-sizing: border-box;
   font-family: "montserrat", sans-serif; }
 
+.gradient {
+  background: linear-gradient(229deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
+  position: relative;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-bottom: 60px;
+  margin-bottom: 200px; }
+  .gradient:before, .gradient:after {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; }
+  .gradient:before {
+    width: calc(100% - 40px);
+    background-color: #CACADB;
+    bottom: -10px; }
+  .gradient:after {
+    width: calc(100% - 80px);
+    background-color: #E7E7F2;
+    bottom: -20px; }
+
+h1, .h1 {
+  font-size: 38px; }
+
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
 .header {
   padding-top: 50px;
-  background-color: #8f919a;
-  width: 100%; }
+  width: 100%;
+  max-height: 150px;
+  height: 150px;
+  z-index: 2; }
   .header-top {
-    margin-bottom: -30px; }
+    margin-bottom: -30px;
+    z-index: 1; }
     .header-top__wrapper > div:not(:last-child) {
       display: flex;
       align-items: center;
@@ -16538,5 +16574,29 @@ body {
           display: none !important; }
       .header-top__address, .header-top__socials {
         display: none !important; } }
+
+@use './../../common/variables' as *;
+@use './../../common/mixins' as *;
+.banner {
+  background-image: url("./../../assets/pictures/svg/h.svg");
+  background-size: contain;
+  padding-top: 150px;
+  height: 100vh;
+  min-height: 400px;
+  position: relative; }
+  .banner h1, .banner .h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .banner__scroll {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px; }
 
 /*# sourceMappingURL=home-page.css.map */

@@ -1,0 +1,12 @@
+@use "extends" as *;
+
+@mixin bg_img_center($url, $bg_size: cover) {
+  @extend %bg_no_repeat__center;
+  background-image: url($url);
+  background-size: $bg_size;
+}
+
+@function get_path($path) {
+  $assets_path: './../../assets/pictures/';
+  @return $assets_path + $path;
+}
