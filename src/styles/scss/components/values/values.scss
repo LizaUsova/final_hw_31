@@ -1,0 +1,35 @@
+@use "./../../common/variables" as *;
+
+.values {
+  padding: 60px 0;
+
+  &__catalog {
+      padding-right: 60px;
+
+    li {
+      font-size: 35px;
+      font-weight: $fw-bold;
+      color: #9eeaf9;
+
+      button {
+        text-align: right;
+      }
+    }
+  }
+
+  &__approach {
+    padding-left: 60px;
+    color: $color-light;
+    gap: 30px;
+
+    h3 {
+      font-weight: $fw-bold;
+      line-height: normal;
+    }
+
+    &-description {
+      font-size: $f-md;
+      line-height: 30px;
+    }
+  }
+}

@@ -16603,6 +16603,28 @@ h2, .h2 {
     bottom: 30px; }
 
 @use "./../../common/variables" as *;
+.values {
+  padding: 60px 0; }
+  .values__catalog {
+    padding-right: 60px; }
+    .values__catalog li {
+      font-size: 35px;
+      font-weight: 700;
+      color: #9eeaf9; }
+      .values__catalog li button {
+        text-align: right; }
+  .values__approach {
+    padding-left: 60px;
+    color: #fff;
+    gap: 30px; }
+    .values__approach h3, .values__approach .h3 {
+      font-weight: 700;
+      line-height: normal; }
+    .values__approach-description {
+      font-size: 20px;
+      line-height: 30px; }
+
+@use "./../../common/variables" as *;
 @use "./../../common/bootstrap-config" as *;
 .services h2, .services .h2 {
   color: #F0145A;
@@ -16622,6 +16644,10 @@ h2, .h2 {
   font-size: 22px;
   font-weight: 700;
   margin: 0; }
+.services__remark {
+  margin-bottom: 10px;
+  font-size: 14px;
+  text-transform: uppercase; }
 .services__description {
   font-size: 16px;
   font-weight: 400; }

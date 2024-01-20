@@ -28,6 +28,12 @@
     margin: 0;
   }
 
+  &__remark {
+    margin-bottom: 10px;
+    font-size: $f-sm;
+    text-transform: uppercase;
+  }
+
   &__description {
     font-size: $font-size-base;
     font-weight: $fw-base;
