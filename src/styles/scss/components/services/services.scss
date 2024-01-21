@@ -1,9 +1,10 @@
 @use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
 @use "./../../common/bootstrap-config" as *;
 
 .services {
   h2 {
-    color: $accent-color;
+    @extend %gradient_color;
     font-weight: $fw-bold;
     margin-bottom: 60px;
   }

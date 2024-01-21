@@ -1,10 +1,17 @@
+@use "./variables" as *;
+
 $font-size-base: 16px;
 $font-size-sm: 12px;
 $nav-link-padding-y: 0;
 $nav-link-padding-x: 0;
 $navbar-nav-link-padding-x: 0;
 $navbar-light-active-color: #fff;
-//$nav-tabs-border-width:
+$nav-tabs-border-width: none;
+$nav-tabs-link-active-color: $accent-color;
+$nav-tabs-link-active-bg: none;
+$border-color: rgba(255, 255, 255, 0.30);
+$border-width: 2px;
+$link-color: $color-grey;
 
 
 $bootstrap-icons-font-dir: "./../../../node_modules/bootstrap-icons/font/fonts";
