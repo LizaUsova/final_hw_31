@@ -23,7 +23,7 @@
   }
 
   &__title h4 {
-    color: #24A3FF;
+    color: $color-blue;
     font-size: $fs-h4;
     font-weight: $fw-bold;
     margin: 0;
@@ -33,6 +33,14 @@
     margin-bottom: 10px;
     font-size: $f-sm;
     text-transform: uppercase;
+
+    a {
+      color: $color-blue;
+    }
+
+    &:hover {
+      @extend %gradient_color;
+    }
   }
 
   &__description {

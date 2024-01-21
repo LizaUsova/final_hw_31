@@ -1,10 +1,10 @@
 @charset "UTF-8";
 @use "./variables" as *;
-.banner {
+.banner, .team__img1, .team__img2, .team__img3 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__remark:hover, .team__description-text, .team__description a:hover {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -3731,7 +3731,7 @@ textarea.form-control-lg {
   --bs-card-cap-color: ;
   --bs-card-height: ;
   --bs-card-color: ;
-  --bs-card-bg: var(--bs-body-bg);
+  --bs-card-bg: #F5F5FA;
   --bs-card-img-overlay-padding: 1rem;
   --bs-card-group-margin: 0.75rem;
   position: relative;
@@ -16513,7 +16513,7 @@ body {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding-bottom: 60px;
-  margin-bottom: 200px; }
+  margin-bottom: 60px; }
   .gradient:before, .gradient:after {
     display: inline-block;
     content: '';
@@ -16540,6 +16540,7 @@ h2, .h2 {
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
 .header {
   padding-top: 50px;
   width: 100%;
@@ -16685,6 +16686,8 @@ h2, .h2 {
   margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase; }
+  .services__remark a {
+    color: #24A3FF; }
 .services__description {
   font-size: 16px;
   font-weight: 400; }
@@ -16693,5 +16696,45 @@ h2, .h2 {
 @media (max-width: 556px) {
   .services h2, .services .h2 {
     font-size: 30px; } }
+
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+.team {
+  padding-bottom: 60px;
+  max-height: 300px;
+  height: 300px; }
+  .team__inner {
+    max-height: 300px; }
+  .team__img1 {
+    background-image: url("./../../assets/pictures/img/olexandrovsky.jpg");
+    background-size: cover; }
+  .team__img2 {
+    background-image: url("./../../assets/pictures/img/kobzar.jpg");
+    background-size: cover; }
+  .team__img3 {
+    background-image: url("./../../assets/pictures/img/melnik.jpg");
+    background-size: cover; }
+  .team__description-text {
+    font-weight: 700;
+    font-size: 38px;
+    line-height: normal;
+    margin-bottom: 30px; }
+  .team__description-name {
+    color: #B3B3BA;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 6px; }
+  .team__description-job {
+    color: #B3B3BA;
+    font-weight: 400;
+    font-size: 14px; }
+  .team__description a {
+    color: #24A3FF;
+    font-size: 14px;
+    letter-spacing: 1px; }
+  .team__indicator {
+    margin-bottom: -30px !important;
+    text-align: start; }
 
 /*# sourceMappingURL=home-page.css.map */

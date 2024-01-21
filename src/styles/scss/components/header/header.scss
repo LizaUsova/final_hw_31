@@ -1,5 +1,6 @@
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
 
 .header {
   padding-top: 50px;
@@ -49,6 +50,10 @@
 
     a {
       text-transform: lowercase;
+
+      &:hover {
+        @extend %gradient_color;
+      }
     }
   }
 }

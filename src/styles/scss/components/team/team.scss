@@ -1,0 +1,64 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.team {
+  padding-bottom: 60px;
+  max-height: 300px;
+  height: 300px;
+
+  &__inner {
+  max-height: 300px;
+}
+
+  &__img1 {
+    @include bg_img_center(get_path('img/olexandrovsky.jpg'));
+  }
+
+  &__img2 {
+    @include bg_img_center(get_path('img/kobzar.jpg'));
+  }
+
+  &__img3 {
+    @include bg_img_center(get_path('img/melnik.jpg'));
+  }
+
+  &__description {
+      &-text {
+        @extend %gradient_color;
+        font-weight: $fw-bold;
+        font-size: $f-lg;
+        line-height: normal;
+        margin-bottom: 30px;
+      }
+
+    &-name {
+      color: $color-grey;
+      font-weight: $fw-bold;
+      font-size: $f-sm;
+      margin-bottom: 6px;
+    }
+
+    &-job {
+      color: $color-grey;
+      font-weight: $fw-base;
+      font-size: $f-sm;
+    }
+
+    a {
+      color: $color-blue;
+      font-size: $f-sm;
+      letter-spacing: 1px;
+
+      &:hover {
+        @extend %gradient_color;
+      }
+    }
+  }
+
+
+  &__indicator {
+    margin-bottom: -30px!important;
+    text-align: start;
+  }
+}
