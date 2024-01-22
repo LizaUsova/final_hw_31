@@ -16538,6 +16538,15 @@ h1, .h1 {
 h2, .h2 {
   font-size: 38px; }
 
+h3, .h3 {
+  font-size: 30px; }
+
+h4, .h4 {
+  font-size: 22px; }
+
+h5, .h5 {
+  font-size: 14px; }
+
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
@@ -16748,5 +16757,33 @@ h2, .h2 {
     max-height: 950px; }
   .team__description-text {
     font-size: 30px; } }
+
+@use "./../../common/variables" as *;
+.trust {
+  padding-bottom: 30px; }
+  .trust__title {
+    text-transform: uppercase;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 30px; }
+  .trust__img img {
+    width: 100%; }
+
+@use "./../../common/variables" as *;
+@media (max-width: 1280px) {
+  .trust .container {
+    max-width: none; } }
+@media (max-width: 992px) {
+  .trust .container {
+    max-width: none; } }
+@media (max-width: 767px) {
+  .trust .container {
+    max-width: none; } }
+@media (max-width: 556px) {
+  .trust .container {
+    max-width: none; } }
+@media (max-width: 480px) {
+  .trust .container {
+    max-width: none; } }
 
 /*# sourceMappingURL=home-page.css.map */

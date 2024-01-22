@@ -1,0 +1,33 @@
+@use "./../../common/variables" as *;
+
+.trust {
+  @media (max-width: 1280px) {
+    .container {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 992px) {
+    .container {
+      max-width: none;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .container {
+      max-width: none;
+    }
+  }
+
+    @media (max-width: 556px) {
+      .container {
+        max-width: none;
+      }
+    }
+
+  @media (max-width: 480px) {
+    .container {
+      max-width: none;
+    }
+  }
+}
