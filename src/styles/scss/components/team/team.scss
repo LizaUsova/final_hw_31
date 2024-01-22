@@ -59,6 +59,10 @@
 
   &__indicator {
     margin-bottom: -30px!important;
-    text-align: start;
+
+    button {
+      border-width: 1px;
+      border-radius: 50%;
+    }
   }
 }
