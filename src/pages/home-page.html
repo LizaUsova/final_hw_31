@@ -90,7 +90,8 @@
         <section class="values">
             <div class="container">
                     <div class="row d-flex align-items-center">
-                        <ul class="values__catalog col-xxl-4 col-xl-5 col-lg-6 nav nav-tabs d-flex justify-content-end border-end border-bottom-0" id="myTab" role="tablist">
+                        <ul class="values__catalog col-xxl-4 col-xl-5
+                        col-lg-6 nav nav-tabs d-flex justify-content-end border-end border-bottom-0" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="consistent-tab" data-bs-toggle="tab" data-bs-target="#consistent-pane" type="button" role="tab" aria-controls="consistent-pane" aria-selected="true">Consistent</button>
                             </li>
@@ -104,7 +105,7 @@
                                 <button class="nav-link" id="business-tab" data-bs-toggle="tab" data-bs-target="#business-tab-pane" type="button" role="tab" aria-controls="business-tab-pane" aria-selected="false">Business oriented</button>
                             </li>
                         </ul>
-                        <div class="values__approach col-xxl-8 col-xl-7 col-lg-6 d-flex tab-content" id="myTabContent">
+                        <div class="values__approach col-xxl-8 col-xl-7 col-lg-6 d-flex tab-content text-white" id="myTabContent">
                             <div class="values__approach-description tab-pane fade show active" id="consistent-pane" role="tabpanel" aria-labelledby="consistent" tabindex="0">
                                 <h3>We turn the idea of legal services</h3>
                                 <span>Consolidating many years of experience and practice,
@@ -142,12 +143,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/ecommerce.svg" alt="ecommerce">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/ecommerce.svg" alt="ecommerce">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>IT and e-commerce</h4>
+                                <a class="text-decoration-none" href="#">IT and e-commerce</a>
                             </div>
                             <div class="services__description">
                                 An endless stream of contracts, tax issues,
@@ -161,13 +162,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/support.svg" alt="support">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/support.svg" alt="support">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>Comprehensive daily
-                                    legal support</h4>
+                                <a class="text-decoration-none" href="#">Comprehensive daily legal support</a>
                             </div>
                             <div class="services__description">
                                 In addition, over time, the work will become
@@ -181,12 +181,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/coprorate.svg" alt="ecommerce">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/coprorate.svg" alt="ecommerce">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>Structuring corporate relationships</h4>
+                                <a class="text-decoration-none" href="#">Structuring corporate relationships</a>
                             </div>
                             <div class="services__description">
                                 Instead of just providing legal services,
@@ -198,12 +198,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/trust.svg" alt="ecommerce">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/trust.svg" alt="ecommerce">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>Building contractual relations</h4>
+                                <a class="text-decoration-none" href="#">Building contractual relations</a>
                             </div>
                             <div class="services__description">
                                 Once a week, or week after month,
@@ -217,12 +217,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/protection.svg" alt="ecommerce">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/protection.svg" alt="ecommerce">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>Protection of business, intellectual property</h4>
+                                <a class="text-decoration-none" href="#">Protection of business, intellectual property</a>
                             </div>
                             <div class="services__description">
                                 And all the other time he will work
@@ -237,12 +237,12 @@
                     <div class="col-lg-4 col-sm-6">
                         <div class="services__service d-flex">
                             <div class="services__icon">
-                                    <span>
-                                        <img src="./../assets/pictures/svg/court.svg" alt="ecommerce">
-                                    </span>
+                                <span>
+                                    <img src="./../assets/pictures/svg/court.svg" alt="ecommerce">
+                                </span>
                             </div>
                             <div class="services__title">
-                                <h4>Judicial representation</h4>
+                                <a class="text-decoration-none" href="#">Judicial representation</a>
                             </div>
                             <div class="services__description">
                                 Is it a small, medium-sized company
@@ -258,11 +258,11 @@
     </div>
     <section class="team">
         <div class="container">
-            <div id="carouselExampleDark" class="team__carousel carousel carousel-dark slide">
+            <div id="carouselExample" class="team__carousel carousel slide">
                 <div class="team__indicator carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 </div>
                 <div class="team__inner carousel-inner">
                     <div class="carousel-item active" data-bs-interval="10000">
@@ -314,10 +314,10 @@
                     </div>
 
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
@@ -332,25 +332,25 @@
                 </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <img src="./../assets/pictures/img/trust/wannabiz.jpg" alt="hillel">
-                 </div>
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <img src="./../assets/pictures/img/trust/tapgerine.jpg" alt="hillel">
-               </div>
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <img src="./../assets/pictures/img/trust/3dlook.jpg" alt="hillel">
                 </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <img src="./../assets/pictures/img/trust/orangear.jpg" alt="hillel">
-            </div>
+                    <img src="./../assets/pictures/img/trust/orangear.jpg" alt="hillel">
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <img src="./../assets/pictures/img/trust/adtellige.jpg" alt="hillel">
-            </div>
+                    <img src="./../assets/pictures/img/trust/adtellige.jpg" alt="hillel">
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <img src="./../assets/pictures/img/trust/clickky.jpg" alt="hillel">
-            </div>
+                    <img src="./../assets/pictures/img/trust/clickky.jpg" alt="hillel">
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
-                <img src="./../assets/pictures/img/trust/ecoleasing.jpg" alt="hillel">
-            </div>
+                    <img src="./../assets/pictures/img/trust/ecoleasing.jpg" alt="hillel">
+                </div>
                 <div class="trust__img p-0 col-lg-3 col-md-4 col-sm-4 col-xs-12">
                     <img src="./../assets/pictures/img/trust/infratek.jpg" alt="hillel">
                 </div>
@@ -407,7 +407,38 @@
     </section>
 </main>
 
+<footer class="footer">
+    <div class="container">
+        <div class="footer__wrapper d-flex justify-content-md-between flex-wrap justify-content-sm-center">
+            <div class="footer-contacts col-xxl-6 col-xl-6 col-lg-6 col-md-6 d-flex justify-content-start flex-wrap">
+                <div class="footer-contacts__wrappers">
+                    <div class="footer-contacts__wrapper d-flex align-items-center flex-wrap justify-content-xxl-start">
+                        <div class="d-inline-flex">
+                            <p class="m-0">Kyiv, Mechnikova str., 14/1</p></div>
+                        <div class="d-inline-flex">
+                            <a class="footer-contacts__address-link text-decoration-none" target="_blank" href="https://www.google.com/maps/place/Mechnykova+St,+14%2F1,+Kyiv,+02000/data=!4m2!3m1!1s0x40d4cf07295b8e39:0x17b2112e2dc0e7a?sa=X&ved=2ahUKEwjQrqfX9eWDAxXCcvEDHSwADIYQ8gF6BAgSEAA">On map</a>
+                        </div>
+                    </div>
+                    <div class="footer-contacts__wrapper d-flex align-items-center flex-wrap justify-content-sm-center">
+                        <div class="d-inline-flex">
+                            <a class="footer-contacts__socials" target="_blank" href="https://facebook.com"><i class="bi bi-facebook"></i></a>
+                        </div>
+                        <div class="d-inline-flex">
+                            <a class="footer-contacts__phone text-decoration-none fw-bold" target="_blank" href="tel:0800211927">0800 211 927</a>
+                        </div>
+                        <div class="d-inline-flex">
+                            <a class="footer-contacts__mail" target="_blank" href="mailto:contact@forstudy.space">contact@forstudy.space</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright col-xxl-6 col-xl-6 col-lg-6 col-md-6 d-flex justify-content-end">
+                <p><i class="bi bi-c-circle"></i><span class="ms-1">2021 HLEGAL Law company, LLC</span></p>
+            </div>
+        </div>
 
+    </div>
+</footer>
 
 <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

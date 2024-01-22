@@ -1,0 +1,53 @@
+@use "./../../common/variables" as *;
+
+.footer {
+  background: $color-light-grey;
+  padding: 30px 0;
+
+  &-contacts__wrapper > div:not(:last-child) {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+
+    &::after {
+      content: '';
+
+      display: block;
+      margin-left: 6px;
+      width: 6px;
+      border-radius: 50%;
+      height: 6px;
+      background: $color-grey;
+    }
+  }
+
+  &-contacts {
+    &__wrappers > div:first-child {
+      margin-bottom: 30px;
+    }
+
+    &__address-link {
+      font-size: $f-xxs;
+      font-weight: $fw-bold;
+      letter-spacing: 1px;
+      color: $color-blue;
+      text-transform: uppercase;
+    }
+
+    &__socials {
+      color: $color-blue;
+      font-size: $f-lg;
+    }
+
+    &__phone {
+      font-weight: $fw-bold;
+      color: $color-dark-grey;
+    }
+
+    &__mail {
+      font-weight: $fw-bold;
+      color: $color-blue;
+    }
+  }
+
+}

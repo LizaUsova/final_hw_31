@@ -10,7 +10,7 @@
   @media (max-width: 767px) {
 
     &__cards > :last-child {
-      min-width: 400px;
+      min-width: 330px;
     }
 
     &__cards > :not(:last-child) {
@@ -29,8 +29,12 @@
   }
 
   @media (max-width: 480px) {
-    &__cards > {
-      min-width: 540px;
+    &__cards > :last-child {
+      min-width: 300px;
+    }
+
+    &__cards > :not(:last-child) {
+      min-width: 300px;
     }
   }
 }
