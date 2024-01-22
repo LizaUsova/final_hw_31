@@ -11,15 +11,15 @@
 }
 
   &__img1 {
-    @include bg_img_center(get_path('img/olexandrovsky.jpg'));
+    @include bg_img_center(get_path('img/team/olexandrovsky.jpg'));
   }
 
   &__img2 {
-    @include bg_img_center(get_path('img/kobzar.jpg'));
+    @include bg_img_center(get_path('img/team/kobzar.jpg'));
   }
 
   &__img3 {
-    @include bg_img_center(get_path('img/melnik.jpg'));
+    @include bg_img_center(get_path('img/team/melnik.jpg'));
   }
 
   &__description {
@@ -34,19 +34,19 @@
     &-name {
       color: $color-grey;
       font-weight: $fw-bold;
-      font-size: $f-sm;
+      font-size: $f-xs;
       margin-bottom: 6px;
     }
 
     &-job {
       color: $color-grey;
       font-weight: $fw-base;
-      font-size: $f-sm;
+      font-size: $f-xs;
     }
 
     a {
       color: $color-blue;
-      font-size: $f-sm;
+      font-size: $f-xs;
       letter-spacing: 1px;
 
       &:hover {

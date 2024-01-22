@@ -1,0 +1,71 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.recommended {
+  background: $color-light-grey;
+  margin-bottom: 30px;
+  padding-top: 30px;
+
+  &__link {
+    margin-bottom: 10px;
+    font-size: $f-xs;
+    text-transform: uppercase;
+
+    a {
+      color: $color-blue;
+    }
+
+    &:hover {
+      @extend %gradient_color;
+    }
+  }
+
+  h2 {
+    @extend %gradient_color;
+    font-weight: $fw-bold;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    color: $color-blue;
+    font-weight: $fw-bold;
+    margin-bottom: 15px;
+  }
+
+  &__cards {
+    gap: 30px;
+  }
+
+  &__update {
+    font-size: $f-xxs;
+    color: $color-grey;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: $color-border-after;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    font-size: $f-xs;
+    line-height: 22px;
+    font-weight: $fw-base;
+  }
+
+  .container {
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      background-color: $color-border-after;
+      width: 100%;
+    }
+  }
+}

@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__remark:hover, .team__description-text, .team__description a:hover {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .recommended__link:hover, .recommended h2, .recommended .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16545,7 +16545,7 @@ h4, .h4 {
   font-size: 22px; }
 
 h5, .h5 {
-  font-size: 14px; }
+  font-size: 16px; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -16637,7 +16637,7 @@ h5, .h5 {
     padding-left: 60px;
     color: #fff; }
     .values__approach-description {
-      font-size: 20px;
+      font-size: 22px;
       line-height: 40px; }
       .values__approach-description h3, .values__approach-description .h3 {
         font-weight: 700;
@@ -16691,11 +16691,11 @@ h5, .h5 {
   font-size: 22px;
   font-weight: 700;
   margin: 0; }
-.services__remark {
+.services__link {
   margin-bottom: 10px;
   font-size: 14px;
   text-transform: uppercase; }
-  .services__remark a {
+  .services__link a {
     color: #24A3FF; }
 .services__description {
   font-size: 16px;
@@ -16714,13 +16714,13 @@ h5, .h5 {
   .team__inner {
     max-height: 400px; }
   .team__img1 {
-    background-image: url("./../../assets/pictures/img/olexandrovsky.jpg");
+    background-image: url("./../../assets/pictures/img/team/olexandrovsky.jpg");
     background-size: cover; }
   .team__img2 {
-    background-image: url("./../../assets/pictures/img/kobzar.jpg");
+    background-image: url("./../../assets/pictures/img/team/kobzar.jpg");
     background-size: cover; }
   .team__img3 {
-    background-image: url("./../../assets/pictures/img/melnik.jpg");
+    background-image: url("./../../assets/pictures/img/team/melnik.jpg");
     background-size: cover; }
   .team__description-text {
     font-weight: 700;
@@ -16785,5 +16785,68 @@ h5, .h5 {
 @media (max-width: 480px) {
   .trust .container {
     max-width: none; } }
+
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+.recommended {
+  background: #F5F5FA;
+  margin-bottom: 30px;
+  padding-top: 30px; }
+  .recommended__link {
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase; }
+    .recommended__link a {
+      color: #24A3FF; }
+  .recommended h2, .recommended .h2 {
+    font-weight: 700;
+    margin-bottom: 30px; }
+  .recommended h5, .recommended .h5 {
+    color: #24A3FF;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .recommended__cards {
+    gap: 30px; }
+  .recommended__update {
+    font-size: 12px;
+    color: #B3B3BA;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .recommended__update:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: #E6E6F0;
+      width: 100%; }
+  .recommended__description {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400; }
+  .recommended .container:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background-color: #E6E6F0;
+    width: 100%; }
+
+@use "./../../common/variables" as *;
+@media (max-width: 992px) {
+  .recommended .container {
+    max-width: 992px; } }
+@media (max-width: 767px) {
+  .recommended__cards > :last-child {
+    min-width: 400px; }
+  .recommended__cards > :not(:last-child) {
+    min-width: 240px; } }
+@media (max-width: 556px) {
+  .recommended h2, .recommended .h2 {
+    font-size: 30px; }
+  .recommended__cards > :not(:last-child) {
+    min-width: 315px; } }
+@media (max-width: 480px) {
+  .recommended__cards > {
+    min-width: 540px; } }
 
 /*# sourceMappingURL=home-page.css.map */

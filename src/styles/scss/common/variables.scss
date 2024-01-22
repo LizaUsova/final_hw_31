@@ -11,6 +11,9 @@ $color-light-grey: #F5F5FA;
 $color-grey: #B3B3BA;
 $color-blue: #24A3FF;
 $color-light_blue: rgba(211, 237, 255, 0.82);
+$color-border-after: #E6E6F0;
+
+
 
 
 // for fonts
@@ -21,14 +24,17 @@ $fw-base: 400;
 $fw-bold: 700;
 
 // font-sizes
-$fs-h1: 38px;
-$fs-h2: 38px;
-$fs-h3: 30px;
-$fs-h4: 22px;
-$fs-h5: 14px;
-
-//$f-xs: 12px;
-$f-sm: 14px;
-$f-md: 20px;
+$f-xxs: 12px;
+$f-xs: 14px;
+$f-sm: 16px;
+$f-md: 22px;
 $f-ml: 30px;
 $f-lg: 38px;
+
+$fs-h1: $f-lg;
+$fs-h2: $f-lg;
+$fs-h3: $f-ml;
+$fs-h4: $f-md;
+$fs-h5: $f-sm;
+
+
