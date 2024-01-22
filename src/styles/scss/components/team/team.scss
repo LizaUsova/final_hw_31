@@ -3,12 +3,11 @@
 @use "./../../common/mixins" as *;
 
 .team {
-  padding-bottom: 60px;
-  max-height: 300px;
-  height: 300px;
+  //padding-bottom: 60px;
+  margin-bottom: 60px;
 
   &__inner {
-  max-height: 300px;
+  max-height: 400px;
 }
 
   &__img1 {

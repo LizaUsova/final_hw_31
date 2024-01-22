@@ -16701,11 +16701,9 @@ h2, .h2 {
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
 .team {
-  padding-bottom: 60px;
-  max-height: 300px;
-  height: 300px; }
+  margin-bottom: 60px; }
   .team__inner {
-    max-height: 300px; }
+    max-height: 400px; }
   .team__img1 {
     background-image: url("./../../assets/pictures/img/olexandrovsky.jpg");
     background-size: cover; }
@@ -16738,5 +16736,17 @@ h2, .h2 {
     .team__indicator button {
       border-width: 1px;
       border-radius: 50%; }
+
+@use "./../../common/variables" as *;
+@media (max-width: 992px) {
+  .team .container {
+    max-width: 992px; }
+  .team__inner {
+    max-height: 530px; } }
+@media (max-width: 556px) {
+  .team__inner {
+    max-height: 950px; }
+  .team__description-text {
+    font-size: 30px; } }
 
 /*# sourceMappingURL=home-page.css.map */
