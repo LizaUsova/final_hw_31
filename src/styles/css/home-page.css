@@ -3386,7 +3386,7 @@ textarea.form-control-lg {
   --bs-navbar-toggler-padding-y: 0.25rem;
   --bs-navbar-toggler-padding-x: 0.75rem;
   --bs-navbar-toggler-font-size: 20px;
-  --bs-navbar-toggler-icon-bg: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2833, 37, 41, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  --bs-navbar-toggler-icon-bg: none;
   --bs-navbar-toggler-border-color: rgba(var(--bs-emphasis-color-rgb), 0.15);
   --bs-navbar-toggler-border-radius: var(--bs-border-radius);
   --bs-navbar-toggler-focus-width: 0.25rem;
@@ -16712,7 +16712,7 @@ h5, .h5 {
 .team {
   margin-bottom: 60px; }
   .team__inner {
-    max-height: 400px; }
+    min-height: 300px; }
   .team__img1 {
     background-image: url("./../../assets/pictures/img/team/olexandrovsky.jpg");
     background-size: cover; }
@@ -16749,14 +16749,17 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 @media (max-width: 992px) {
   .team .container {
-    max-width: 992px; }
-  .team__inner {
-    max-height: 530px; } }
-@media (max-width: 556px) {
-  .team__inner {
-    max-height: 950px; }
+    max-width: 992px; } }
+@media (max-width: 767px) {
   .team__description-text {
-    font-size: 30px; } }
+    font-size: 22px; }
+  .team__indicator {
+    margin-bottom: 10px !important; } }
+@media (max-width: 556px) {
+  .team__description-text {
+    font-size: 22px; }
+  .team__indicator {
+    margin-bottom: -10px !important; } }
 
 @use "./../../common/variables" as *;
 .trust {

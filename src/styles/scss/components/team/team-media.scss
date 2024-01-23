@@ -5,21 +5,32 @@
     .container {
       max-width: 992px;
     }
+  }
 
-    &__inner {
-      max-height: 530px;
+  @media (max-width: 767px) {
+    &__description {
+      &-text {
+        font-size: $f-md;
+      }
+    }
+
+    &__indicator {
+      margin-bottom: 10px !important;
     }
   }
 
   @media (max-width: 556px) {
-    &__inner {
-      max-height: 950px;
-    }
-
     &__description {
       &-text {
-        font-size: $f-ml;
+        font-size: $f-md;
       }
     }
+
+    &__indicator {
+      margin-bottom: -10px !important;
+    }
+  }
+
+  @media (max-width: 480px) {
   }
 }

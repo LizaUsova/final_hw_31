@@ -6,8 +6,12 @@
   margin-bottom: 60px;
 
   &__inner {
-  max-height: 400px;
+  min-height: 300px;
 }
+
+  //&__item {
+  //  min-height: 340px;
+  //}
 
   &__img1 {
     @include bg_img_center(get_path('img/team/olexandrovsky.jpg'));
