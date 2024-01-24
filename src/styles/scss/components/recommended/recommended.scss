@@ -6,14 +6,12 @@
   background: $color-light-grey;
   padding-top: 30px;
 
-  &__link {
+  &__link a {
     margin-bottom: 10px;
     font-size: $f-xs;
     text-transform: uppercase;
-
-    a {
-      color: $color-blue;
-    }
+    color: $color-blue;
+    font-weight: $fw-bold;
 
     &:hover {
       @extend %gradient_color;

@@ -51,6 +51,8 @@
       color: $color-blue;
       font-size: $f-xs;
       letter-spacing: 1px;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
 
       &:hover {
         @extend %gradient_color;

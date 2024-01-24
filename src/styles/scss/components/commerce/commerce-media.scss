@@ -1,0 +1,9 @@
+@use "./../../common/variables" as *;
+
+.commerce {
+  @media (max-width: 575px) {
+    h2 {
+      font-size: $f-ml;
+    }
+  }
+}

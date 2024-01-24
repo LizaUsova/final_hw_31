@@ -3,7 +3,8 @@
 @use "./../../common/bootstrap-config" as *;
 
 .services {
-  padding-top: 150px;
+  padding-top: 60px;
+
   h2 {
     @extend %gradient_color;
     font-weight: $fw-bold;
@@ -47,5 +48,9 @@
   &__description {
     font-size: $font-size-base;
     font-weight: $fw-base;
+  }
+
+  &.services-page {
+    padding-top: 150px;
   }
 }

@@ -1,6 +1,10 @@
 @charset "UTF-8";
 @use "./variables" as *;
-.header .navbar-nav a:hover, .services h2, .services .h2, .services__link:hover {
+.banner {
+  background-repeat: no-repeat;
+  background-position: center center; }
+
+.header .navbar-nav a:hover, .commerce h2, .commerce .h2, .recommended__link a:hover, .recommended h2, .recommended .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16528,6 +16532,22 @@ body {
     background-color: #E7E7F2;
     bottom: -20px; }
 
+.btn-custom {
+  cursor: pointer;
+  padding: 18px 30px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 700;
+  background: #24A3FF;
+  border: 2px solid transparent;
+  border-radius: 12px;
+  box-shadow: 0 0 20px 0 rgba(36, 163, 255, 0.5); }
+  .btn-custom:hover {
+    background: #0085FF;
+    transition: 0.3s; }
+  .btn-custom:active {
+    background: #006CCF; }
+
 h1, .h1 {
   font-size: 38px; }
 
@@ -16594,76 +16614,131 @@ h5, .h5 {
       .header-top__address, .header-top__socials {
         display: none !important; } }
 
-@use "./../../common/variables" as *;
-@use "./../../common/extends" as *;
-@use "./../../common/bootstrap-config" as *;
-.services {
-  padding-top: 60px; }
-  .services h2, .services .h2 {
-    font-weight: 700;
-    margin-bottom: 60px; }
-  .services__service {
+@use './../../common/variables' as *;
+@use './../../common/mixins' as *;
+.banner {
+  background-image: url("./../../assets/pictures/svg/h.svg");
+  background-size: contain;
+  padding-top: 150px;
+  height: 100vh;
+  min-height: 400px; }
+  .banner h1, .banner .h1 {
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     color: #fff;
-    gap: 30px;
-    flex-direction: column; }
-  .services__icon span {
+    text-align: center;
+    font-weight: 700;
+    text-transform: capitalize; }
+  .banner__scroll {
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px; }
+
+@use "./../../common/variables" as *;
+.commerce {
+  padding-top: 160px; }
+  .commerce h2, .commerce .h2 {
+    font-weight: 700; }
+  .commerce h4, .commerce .h4 {
+    margin-bottom: 30px;
+    font-weight: 700; }
+  .commerce__service {
+    margin-bottom: 30px;
+    color: #fff;
+    gap: 30px; }
+    .commerce__service:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: #E6E6F0;
+      width: 100%; }
+  .commerce__icon span {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
     background-color: #fff; }
-  .services__title a {
-    color: #24A3FF;
-    font-size: 22px;
-    font-weight: 700;
-    margin: 0; }
-  .services__link {
-    margin-bottom: 10px;
-    font-size: 14px;
-    text-transform: uppercase; }
-    .services__link a {
-      color: #24A3FF; }
-  .services__description {
-    font-size: 16px;
-    font-weight: 400; }
-  .services.services-page {
-    padding-top: 150px; }
+  .commerce__description {
+    font-weight: 400;
+    line-height: 30px;
+    font-size: 20px; }
+  .commerce__btn {
+    margin-bottom: 30px; }
+  .commerce__services-list {
+    gap: 15px; }
+    .commerce__services-list li {
+      font-size: 18px; }
+      .commerce__services-list li::marker {
+        color: #F0145A; }
 
 @use "./../../common/variables" as *;
-@media (max-width: 556px) {
-  .services h2, .services .h2 {
+@media (max-width: 575px) {
+  .commerce h2, .commerce .h2 {
     font-size: 30px; } }
 
 @use "./../../common/variables" as *;
-.trust {
-  padding-bottom: 30px; }
-  .trust__title {
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+.recommended {
+  background: #F5F5FA;
+  padding-top: 30px; }
+  .recommended__link a {
+    margin-bottom: 10px;
+    font-size: 14px;
     text-transform: uppercase;
+    color: #24A3FF;
+    font-weight: 700; }
+  .recommended h2, .recommended .h2 {
     font-weight: 700;
     margin-bottom: 30px; }
-  .trust__img img {
-    width: 100%;
-    transition: 1s; }
-  .trust__img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 10px #B3B3BA;
-    z-index: 2; }
+  .recommended h5, .recommended .h5 {
+    color: #24A3FF;
+    font-weight: 700;
+    margin-bottom: 15px; }
+  .recommended__cards {
+    gap: 30px; }
+  .recommended__update {
+    font-size: 12px;
+    color: #B3B3BA;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .recommended__update:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: #E6E6F0;
+      width: 100%; }
+  .recommended__description {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 400; }
+  .recommended .container:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background-color: #E6E6F0;
+    width: 100%; }
 
 @use "./../../common/variables" as *;
-@media (max-width: 1280px) {
-  .trust .container {
-    max-width: none; } }
 @media (max-width: 992px) {
-  .trust .container {
-    max-width: none; } }
+  .recommended .container {
+    max-width: 992px; } }
 @media (max-width: 767px) {
-  .trust .container {
-    max-width: none; } }
+  .recommended__cards > :last-child {
+    min-width: 330px; }
+  .recommended__cards > :not(:last-child) {
+    min-width: 240px; } }
 @media (max-width: 556px) {
-  .trust .container {
-    max-width: none; } }
+  .recommended h2, .recommended .h2 {
+    font-size: 30px; }
+  .recommended__cards > :not(:last-child) {
+    min-width: 315px; } }
 @media (max-width: 480px) {
-  .trust .container {
-    max-width: none; } }
+  .recommended__cards > :last-child {
+    min-width: 300px; }
+  .recommended__cards > :not(:last-child) {
+    min-width: 300px; } }
 
 @use "./../../common/variables" as *;
 .footer {
@@ -16673,7 +16748,7 @@ h5, .h5 {
     display: flex;
     align-items: center;
     margin-right: 6px; }
-    .footer-contacts__wrapper > div:not(:last-child)::after {
+    .footer-contacts__wrapper > div:not(:last-child):after {
       content: '';
       display: block;
       margin-left: 6px;
@@ -16718,4 +16793,4 @@ h5, .h5 {
   .footer__wrapper {
     justify-content: center; } }
 
-/*# sourceMappingURL=services.css.map */
+/*# sourceMappingURL=services-entry.css.map */

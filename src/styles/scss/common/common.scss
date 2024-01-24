@@ -39,6 +39,30 @@ body {
   margin-bottom: 60px;
 }
 
+.btn-custom {
+  cursor: pointer;
+
+  padding: 18px 30px;
+
+  font-size: $f-sm;
+  color: #fff;
+  font-weight: $fw-bold;
+
+  background: $color-blue;
+  border: 2px solid transparent;
+  border-radius: $border-r;
+  box-shadow: 0 0 20px 0 $color-btn-shadow;
+
+  &:hover {
+    background: $color-middle-blue;
+    transition: 0.3s;
+  }
+
+  &:active {
+    background: $color-dark-blue;
+  }
+}
+
 h1 {
   font-size: $fs-h1;
 }
