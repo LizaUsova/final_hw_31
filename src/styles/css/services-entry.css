@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .commerce h2, .commerce .h2, .recommended__link a:hover, .recommended h2, .recommended .h2 {
+.header .navbar-nav a:hover, .commerce h2, .commerce .h2, .publications__link a:hover, .publications h2, .publications .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16563,6 +16563,55 @@ h4, .h4 {
 h5, .h5 {
   font-size: 16px; }
 
+.switch {
+  width: 230px;
+  height: 40px;
+  border-radius: 12px; }
+  .switch input {
+    appearance: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 12px;
+    background: #E6E6F0;
+    outline: none;
+    transition: 0.25s; }
+    .switch input:before, .switch input:after {
+      z-index: 2;
+      position: absolute;
+      top: 0;
+      transform: translateY(-50%);
+      font-weight: 700;
+      font-size: 16px;
+      text-transform: lowercase;
+      color: #323264; }
+    .switch input:before {
+      content: 'news';
+      left: 20px; }
+    .switch input:after {
+      content: 'articles';
+      right: 20px; }
+    .switch input:checked + label {
+      left: 10px;
+      right: 115px;
+      background: #fff;
+      transition: left 0.5s, right 0.4s 0.2s; }
+    .switch input:not(:checked) {
+      background: #E6E6F0;
+      transition: background 0.4s; }
+      .switch input:not(:checked):before, .switch input:not(:checked):after {
+        transition: color 0.5s; }
+      .switch input:not(:checked) + label {
+        left: 115px;
+        right: 10px;
+        background: #F5F5FA;
+        transition: left 0.4s 0.2s, right 0.5s, background 0.35s; }
+  .switch label {
+    z-index: 1;
+    position: absolute;
+    top: 10px;
+    bottom: 4px;
+    border-radius: 12px; }
+
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
@@ -16599,6 +16648,19 @@ h5, .h5 {
     gap: 15px; }
     .header .navbar-nav a {
       text-transform: lowercase; }
+
+.dark-text .header-top__lang-title {
+  color: #B3B3BA !important; }
+.dark-text .header-top__phone a {
+  color: #B3B3BA !important; }
+.dark-text .header-top__socials a i {
+  color: #B3B3BA !important; }
+.dark-text .header-top__address a {
+  color: #B3B3BA !important; }
+.dark-text .header-top__wrapper > div:not(:last-child)::after {
+  background: #B3B3BA; }
+.dark-text .navbar-nav a {
+  color: #24A3FF !important; }
 
 @media (max-width: 992px) {
   .header {
@@ -16651,7 +16713,7 @@ h5, .h5 {
       content: '';
       display: inline-block;
       height: 4px;
-      background-color: #E6E6F0;
+      background-color: #888893;
       width: 100%; }
   .commerce__icon span {
     display: inline-block;
@@ -16679,45 +16741,45 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
-.recommended {
+.publications {
   background: #F5F5FA;
   padding-top: 30px; }
-  .recommended__link a {
+  .publications__link a {
     margin-bottom: 10px;
     font-size: 14px;
     text-transform: uppercase;
     color: #24A3FF;
     font-weight: 700; }
-  .recommended h2, .recommended .h2 {
+  .publications h2, .publications .h2 {
     font-weight: 700;
     margin-bottom: 30px; }
-  .recommended h5, .recommended .h5 {
+  .publications h5, .publications .h5 {
     color: #24A3FF;
     font-weight: 700;
     margin-bottom: 15px; }
-  .recommended__cards {
+  .publications__cards {
     gap: 30px; }
-  .recommended__update {
+  .publications__update {
     font-size: 12px;
     color: #B3B3BA;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    .recommended__update:after {
+    .publications__update:after {
       content: '';
       display: inline-block;
       height: 4px;
-      background-color: #E6E6F0;
+      background-color: #888893;
       width: 100%; }
-  .recommended__description {
+  .publications__description {
     font-size: 14px;
     line-height: 22px;
     font-weight: 400; }
-  .recommended .container:after {
+  .publications .container:after {
     content: '';
     display: inline-block;
     height: 2px;
-    background-color: #E6E6F0;
+    background-color: #888893;
     width: 100%; }
 
 @use "./../../common/variables" as *;

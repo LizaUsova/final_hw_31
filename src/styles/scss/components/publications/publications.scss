@@ -2,7 +2,7 @@
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
 
-.recommended {
+.publications {
   background: $color-light-grey;
   padding-top: 30px;
 
@@ -30,10 +30,6 @@
     margin-bottom: 15px;
   }
 
-  &__cards {
-    gap: 30px;
-  }
-
   &__update {
     font-size: $f-xxs;
     color: $color-grey;
@@ -45,7 +41,7 @@
       content: '';
       display: inline-block;
       height: 4px;
-      background-color: $color-border-after;
+      background-color: $color-switch-bg;
       width: 100%;
     }
   }
@@ -61,8 +57,19 @@
       content: '';
       display: inline-block;
       height: 2px;
-      background-color: $color-border-after;
+      background-color: $color-switch-bg;
       width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  &__cards, &__wrapper, &__card-wrapper {
+    gap: 30px;
+  }
+
+  &__card {
+    &-item {
+      min-width: 315px;
     }
   }
 }

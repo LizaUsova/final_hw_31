@@ -82,3 +82,73 @@ h4 {
 h5 {
   font-size: $fs-h5;
 }
+
+.switch {
+  width: 230px;
+  height: 40px;
+  border-radius: 12px;
+
+  input {
+    appearance: none;
+    width: 230px;
+    height: 40px;
+    border-radius: 10px;
+    background: $color-switch-bg;
+    outline: none;
+    transition: 0.25s;
+
+    &:before, &:after {
+      z-index: 2;
+      position: absolute;
+      top: -20%;
+      transform: translateY(-50%);
+      font-weight: $fw-bold;
+      font-size: $f-sm;
+      text-transform: lowercase;
+      color: $color-logo-dark;
+    }
+
+    &:after {
+      content: 'articles';
+      right: 30px;
+    }
+
+    &:before {
+      content: 'news';
+      left: 30px;
+    }
+
+    &:checked {
+      &+label {
+        left: 3px;
+        right: 115px;
+        background: #fff;
+        transition: left 0.5s, right 0.4s 0.2s;
+      }
+    }
+
+    &:not(:checked){
+      background: $color-switch-bg;
+      transition: background 0.4s;
+
+      &:before, &:after {
+        transition: color 0.5s;
+      }
+
+      &+label {
+        left: 115px;
+        right: 3px;
+        background: #fff;
+        transition: left 0.4s 0.2s, right 0.5s, background 0.35s;
+      }
+    }
+  }
+
+  label {
+    z-index: 1;
+    position: absolute;
+    top: -22px;
+    bottom: 7px;
+    border-radius: 7px;
+  }
+}

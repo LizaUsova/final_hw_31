@@ -1,9 +1,11 @@
 @use "./../../common/variables" as *;
 
-.recommended {
-  @media (max-width: 992px) {
-    .container {
-      max-width: 992px;
+.publications {
+  @media (max-width: 1280px) {
+    &__card {
+      &-item {
+        min-width: 300px;
+      }
     }
   }
 

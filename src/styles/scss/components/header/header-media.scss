@@ -21,4 +21,10 @@
       }
     }
   }
+
+  @media (max-width: 480px) {
+    .navbar-brand svg{
+      max-width: 100px;
+    }
+  }
 }

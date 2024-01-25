@@ -57,3 +57,38 @@
     }
   }
 }
+
+
+  .dark-text {
+    .header {
+      &-top {
+        &__lang {
+          &-title {
+            color: $color-grey !important;
+          }
+        }
+
+        &__phone a {
+          color: $color-grey !important;
+        }
+
+        &__socials a i {
+          color: $color-grey !important;
+        }
+
+        &__address a {
+          color: $color-grey !important;
+        }
+
+        &__wrapper > div:not(:last-child) {
+          &::after {
+            background: $color-grey;
+          }
+        }
+      }
+    }
+
+    .navbar-nav a {
+    color:$color-blue !important;;
+    }
+  }
