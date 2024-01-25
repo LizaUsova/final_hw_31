@@ -1,0 +1,29 @@
+@use "./../../common/variables" as *;
+
+.publicationarticle {
+  @media (max-width: 767px) {
+    &__image {
+      max-width: 550px;
+    }
+  }
+
+  @media (max-width: 556px) {
+    &__image {
+      max-width: 500px;
+    }
+
+    h2 {
+      font-size: $f-ml;
+    }
+
+    h3 {
+      font-size: $f-sm-md;
+    }
+  }
+
+  @media (max-width: 480px) {
+    &__image {
+      max-width: 315px;
+    }
+  }
+}

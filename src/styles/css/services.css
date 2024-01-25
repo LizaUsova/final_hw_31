@@ -16567,27 +16567,27 @@ h5, .h5 {
     appearance: none;
     width: 230px;
     height: 40px;
-    border-radius: 12px;
+    border-radius: 10px;
     background: #E6E6F0;
     outline: none;
     transition: 0.25s; }
     .switch input:before, .switch input:after {
       z-index: 2;
       position: absolute;
-      top: 0;
+      top: -20%;
       transform: translateY(-50%);
       font-weight: 700;
       font-size: 16px;
       text-transform: lowercase;
       color: #323264; }
-    .switch input:before {
-      content: 'news';
-      left: 20px; }
     .switch input:after {
       content: 'articles';
-      right: 20px; }
+      right: 30px; }
+    .switch input:before {
+      content: 'news';
+      left: 30px; }
     .switch input:checked + label {
-      left: 10px;
+      left: 3px;
       right: 115px;
       background: #fff;
       transition: left 0.5s, right 0.4s 0.2s; }
@@ -16598,15 +16598,15 @@ h5, .h5 {
         transition: color 0.5s; }
       .switch input:not(:checked) + label {
         left: 115px;
-        right: 10px;
-        background: #F5F5FA;
+        right: 3px;
+        background: #fff;
         transition: left 0.4s 0.2s, right 0.5s, background 0.35s; }
   .switch label {
     z-index: 1;
     position: absolute;
-    top: 10px;
-    bottom: 4px;
-    border-radius: 12px; }
+    top: -22px;
+    bottom: 7px;
+    border-radius: 7px; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -16671,6 +16671,9 @@ h5, .h5 {
           display: none !important; }
       .header-top__address, .header-top__socials {
         display: none !important; } }
+@media (max-width: 480px) {
+  .header .navbar-brand svg {
+    max-width: 100px; } }
 
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;

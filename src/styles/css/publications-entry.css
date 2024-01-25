@@ -1,10 +1,6 @@
 @charset "UTF-8";
 @use "./variables" as *;
-.banner {
-  background-repeat: no-repeat;
-  background-position: center center; }
-
-.header .navbar-nav a:hover, .servicearticle h2, .servicearticle .h2, .publications__link a:hover, .publications h2, .publications .h2 {
+.header .navbar-nav a:hover, .publicationarticle h2, .publicationarticle .h2, .publications__link a:hover, .publications h2, .publications .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16679,67 +16675,82 @@ h5, .h5 {
   .header .navbar-brand svg {
     max-width: 100px; } }
 
-@use './../../common/variables' as *;
-@use './../../common/mixins' as *;
-.banner {
-  background-image: url("./../../assets/pictures/svg/h.svg");
-  background-size: contain;
-  padding-top: 150px;
-  height: 100vh;
-  min-height: 400px; }
-  .banner h1, .banner .h1 {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    font-weight: 700;
-    text-transform: capitalize; }
-  .banner__scroll {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 30px; }
-
 @use "./../../common/variables" as *;
-.servicearticle {
-  padding-top: 160px; }
-  .servicearticle h2, .servicearticle .h2 {
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+.publicationarticle {
+  padding-bottom: 60px; }
+  .publicationarticle__content {
+    gap: 30px;
+    margin-bottom: 30px; }
+  .publicationarticle h5, .publicationarticle .h5 {
+    color: #323264;
     font-weight: 700; }
-  .servicearticle h4, .servicearticle .h4 {
-    margin-bottom: 30px;
+  .publicationarticle h2, .publicationarticle .h2 {
     font-weight: 700; }
-  .servicearticle__service {
-    margin-bottom: 30px;
-    color: #fff;
-    gap: 30px; }
-    .servicearticle__service:after {
+  .publicationarticle h3, .publicationarticle .h3 {
+    font-weight: 700;
+    color: #323264; }
+  .publicationarticle h4, .publicationarticle .h4 {
+    font-weight: 700;
+    color: #323264; }
+  .publicationarticle__update {
+    font-size: 12px;
+    color: #B3B3BA;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px; }
+    .publicationarticle__update:after {
       content: '';
       display: inline-block;
       height: 4px;
-      background-color: #888893;
+      background-color: #E6E6F0;
       width: 100%; }
-  .servicearticle__icon span {
-    display: inline-block;
-    padding: 10px;
-    border-radius: 10px;
-    background-color: #fff; }
-  .servicearticle__description {
-    font-weight: 400;
-    line-height: 30px;
-    font-size: 20px; }
-  .servicearticle__btn {
+  .publicationarticle__description {
+    line-height: 26px;
+    font-weight: 400; }
+  .publicationarticle__image-description {
+    font-size: 14px;
+    color: #B3B3BA; }
+  .publicationarticle__image1 {
     margin-bottom: 30px; }
-  .servicearticle__services-list {
-    gap: 15px; }
-    .servicearticle__services-list li {
+  .publicationarticle ol li {
+    font-size: 18px;
+    line-height: 26px; }
+    .publicationarticle ol li::marker {
+      color: #F0145A;
+      font-weight: 700; }
+  .publicationarticle__icon {
+    gap: 10px; }
+    .publicationarticle__icon a {
+      padding: 5px 10px;
+      color: #006CCF;
+      display: inline-block;
+      border-radius: 12px;
+      background-color: #F5F5FA;
       font-size: 18px; }
-      .servicearticle__services-list li::marker {
-        color: #F0145A; }
+  .publicationarticle__card:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background-color: #E6E6F0;
+    width: 100%;
+    margin-bottom: 30px; }
 
 @use "./../../common/variables" as *;
-@media (max-width: 575px) {
-  .servicearticle h2, .servicearticle .h2 {
-    font-size: 30px; } }
+@media (max-width: 767px) {
+  .publicationarticle__image {
+    max-width: 550px; } }
+@media (max-width: 556px) {
+  .publicationarticle__image {
+    max-width: 500px; }
+  .publicationarticle h2, .publicationarticle .h2 {
+    font-size: 30px; }
+  .publicationarticle h3, .publicationarticle .h3 {
+    font-size: 20px; } }
+@media (max-width: 480px) {
+  .publicationarticle__image {
+    max-width: 315px; } }
 
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
@@ -16861,4 +16872,4 @@ h5, .h5 {
   .footer__wrapper {
     justify-content: center; } }
 
-/*# sourceMappingURL=services-entry.css.map */
+/*# sourceMappingURL=publications-entry.css.map */

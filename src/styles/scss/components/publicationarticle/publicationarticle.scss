@@ -1,0 +1,98 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.publicationarticle {
+  padding-bottom: 60px;
+
+  &__content {
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+
+   h5 {
+     color: $color-logo-dark;
+     font-weight: $fw-bold;
+   }
+
+  h2 {
+    @extend %gradient_color;
+    font-weight: $fw-bold;
+  }
+
+  h3 {
+    font-weight: $fw-bold;
+    color: $color-logo-dark;
+  }
+
+  h4 {
+    font-weight: $fw-bold;
+    color: $color-logo-dark;
+  }
+
+  &__update {
+    font-size: $f-xxs;
+    color: $color-grey;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: $color-switch-bg;
+      width: 100%;
+    }
+  }
+
+  &__description {
+    line-height: 26px;
+    font-weight: $fw-base;
+  }
+
+  &__image {
+    &-description {
+      font-size: $f-xs;
+      color: $color-grey;
+    }
+  }
+
+  &__image1 {
+    margin-bottom: 30px;
+  }
+
+  ol li {
+    font-size: $f-sm-sm;
+    line-height: 26px;
+
+      &::marker {
+        color: $accent-color;
+        font-weight: $fw-bold;
+      }
+    }
+
+  &__icon {
+    gap: 10px;
+
+    a {
+      padding: 5px 10px;
+      color: $color-dark-blue;
+      display: inline-block;
+      border-radius: 12px;
+      background-color: $color-light-grey;
+      font-size: $f-sm-sm;
+    }
+  }
+
+  &__card {
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 2px;
+      background-color: $color-switch-bg;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+}
