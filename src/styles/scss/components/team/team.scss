@@ -9,10 +9,6 @@
   min-height: 300px;
 }
 
-  //&__item {
-  //  min-height: 340px;
-  //}
-
   &__img1 {
     @include bg_img_center(get_path('img/team/olexandrovsky.jpg'));
   }

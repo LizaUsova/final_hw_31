@@ -1,0 +1,60 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.team-group {
+  padding: 60px 0;
+
+  h2 {
+    @extend %gradient_color;
+    font-weight: $fw-bold;
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  h5 {
+    color: $color-logo-dark;
+    font-weight: $fw-bold;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  &__img1 {
+    @include bg_img_center(get_path('img/team/olexandrovsky.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__img2 {
+    @include bg_img_center(get_path('img/team/patrikov.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__img3 {
+    @include bg_img_center(get_path('img/team/melnik.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__img4 {
+    @include bg_img_center(get_path('img/team/binn.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__img5 {
+    @include bg_img_center(get_path('img/team/kobzar.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__img6 {
+    @include bg_img_center(get_path('img/team/wolk.jpg'));
+    @extend %bg_image_team_group;
+  }
+
+  &__description-job {
+    color: $color-grey;
+    font-weight: $fw-base;
+    font-size: $f-xs;
+    line-height: 22px;
+  }
+}

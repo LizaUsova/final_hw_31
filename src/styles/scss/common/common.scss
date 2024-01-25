@@ -63,6 +63,25 @@ body {
   }
 }
 
+.btn-circle {
+  cursor: pointer;
+  font-size: $f-sm;
+  color:$color-blue;
+  background: $color-light-grey;
+  font-weight: $fw-bold;
+  border: 2px solid transparent;
+  border-radius: 50%;
+
+  &:hover {
+    color: $accent-color;
+    transition: 0.3s;
+  }
+
+  &:active {
+    color: $accent-color;
+  }
+}
+
 h1 {
   font-size: $fs-h1;
 }
