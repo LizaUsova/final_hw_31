@@ -1,0 +1,23 @@
+@use "./../../common/variables" as *;
+
+.content {
+  @media (max-width: 992px) {
+    &__texts {
+      margin-bottom:30px;
+    }
+  }
+
+  @media (max-width: 556px) {
+    padding: 30px;
+    &__texts {
+    }
+  }
+
+  @media (max-width: 480px) {
+    h2 {
+      font-size: $f-ml;
+    }
+  }
+
+
+}
