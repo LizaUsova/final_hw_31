@@ -10,10 +10,18 @@
     }
   }
 
+  @media (max-width: 1280px) {
+    &-bg {
+      &__img {
+        height: 340px;
+      }
+    }
+  }
+
   @media (max-width: 992px) {
     &-bg {
       &__img {
-        height: 280px;
+        height: 285px;
       }
     }
   }
