@@ -1,0 +1,39 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.content {
+  padding: 60px 0;
+
+  h2 {
+    @extend %gradient_color;
+    font-weight: $fw-bold;
+  }
+
+  &__texts {
+    gap: 30px;
+  }
+
+  &__items {
+    gap: 30px;
+    margin-left: 15px;
+  }
+
+  &__item {
+    &_number {
+      color: $accent-color;
+      font-size: $f-lg;
+      font-weight: $fw-bold;
+      margin-left: 10px;
+    }
+
+    &_icon {
+      color: $accent-color;
+      font-size: 26px;
+    }
+
+    &_description {
+
+    }
+  }
+}

@@ -12,7 +12,8 @@
     "scss-compile-publications": "sass --watch ./src/styles/scss/publications.scss:./src/styles/css/publications.css",
     "scss-compile-publications-entry": "sass --watch ./src/styles/scss/publications-entry.scss:./src/styles/css/publications-entry.css",
     "scss-compile-team": "sass --watch ./src/styles/scss/team.scss:./src/styles/css/team.css",
-    "scss-compile-team-entry": "sass --watch ./src/styles/scss/team-entry.scss:./src/styles/css/team-entry.css"
+    "scss-compile-team-entry": "sass --watch ./src/styles/scss/team-entry.scss:./src/styles/css/team-entry.css",
+    "scss-compile-about-us": "sass --watch ./src/styles/scss/about-us.scss:./src/styles/css/about-us.css"
   },
   "author": "Yelyzaveta Usova",
   "license": "ISC",
