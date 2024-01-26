@@ -1,0 +1,21 @@
+@use "./../../common/variables" as *;
+
+.member {
+  @media (max-width: 1280px) {
+    &__contacts {
+      flex-direction: column;
+      gap: 10px;
+
+        & > div:after {
+          display: none!important;
+        }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &__img5 {
+      max-width: 300px;
+      max-height: 375px;
+    }
+  }
+}

@@ -1,0 +1,85 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.member {
+  padding: 60px 0;
+
+  h2 {
+    @extend %gradient_color;
+    font-weight: $fw-bold;
+    margin-bottom: 15px;
+  }
+
+  &__img5 {
+    @include bg_img_center(get_path('img/team/kobzar.jpg'));
+    border-radius: 12px;
+    width: 350px;
+    height: 350px;
+  }
+
+  &__contacts {
+    margin-bottom: 30px;
+
+  & > div:not(:last-child) {
+    display: flex;
+    align-items: center;
+    margin-right: 6px;
+
+    &::after {
+      content: '';
+
+      display: block;
+      margin-left: 6px;
+      width: 6px;
+      border-radius: 50%;
+      height: 6px;
+      background: $color-switch-bg;
+    }
+  }
+}
+
+  &__socials {
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: $color-switch-bg;
+      width: 100%;
+      margin-bottom: 30px;
+    }
+  }
+  
+  &__description {
+    gap: 30px;
+  }
+
+  &__text {
+    gap: 15px;
+
+    p {
+      line-height: 26px;
+    }
+  }
+
+  &__subtitle {
+    font-size: $f-xs;
+    font-weight: $fw-bold;
+    line-height: normal;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: $color-logo-dark;
+  }
+
+  &__description-job {
+    color: $color-grey;
+    font-weight: $fw-base;
+    font-size: $f-xs;
+    line-height: 22px;
+  }
+
+  &__mail, &__social {
+    color: $color-blue;
+    font-size: $f-sm;
+  }
+}
