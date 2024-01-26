@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @use "./variables" as *;
-.content-bg {
+.content-bg__img {
   background-repeat: no-repeat;
   background-position: center center; }
 
@@ -16729,10 +16729,26 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
-.content-bg {
+.content-bg__img {
   background-image: url("./../../assets/pictures/img/about_us.jpg");
   background-size: contain;
-  min-height: 580px; }
+  height: 580px;
+  width: 100%; }
+
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+@media (max-width: 1440px) {
+  .content-bg__img {
+    height: 440px; } }
+@media (max-width: 992px) {
+  .content-bg__img {
+    height: 280px; } }
+@media (max-width: 767px) {
+  .content-bg__img {
+    height: 235px; } }
+@media (max-width: 375px) {
+  .content-bg__img {
+    height: 115px; } }
 
 @use "./../../common/variables" as *;
 .achievements {
@@ -16774,22 +16790,27 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 /*# sourceMappingURL=about-us.css.map */

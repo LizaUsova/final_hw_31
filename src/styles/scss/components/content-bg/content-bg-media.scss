@@ -1,0 +1,36 @@
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.content {
+  @media (max-width: 1440px) {
+    &-bg {
+      &__img {
+        height: 440px;
+      }
+    }
+  }
+
+  @media (max-width: 992px) {
+    &-bg {
+      &__img {
+        height: 280px;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    &-bg {
+      &__img {
+        height: 235px;
+      }
+    }
+  }
+
+  @media (max-width: 375px) {
+    &-bg {
+      &__img {
+        height: 115px;
+      }
+    }
+  }
+}

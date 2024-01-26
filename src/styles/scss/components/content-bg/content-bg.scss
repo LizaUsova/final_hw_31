@@ -2,7 +2,12 @@
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
 
-.content-bg {
-  @include bg_img_center(get_path('img/about_us.jpg'), contain);
-  min-height: 580px;
+.content {
+  &-bg {
+    &__img {
+      @include bg_img_center(get_path('img/about_us.jpg'), contain);
+      height: 580px;
+      width: 100%;
+    }
+  }
 }
