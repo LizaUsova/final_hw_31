@@ -16755,8 +16755,71 @@ h5, .h5 {
 
 @use "./../../common/variables" as *;
 .achievements {
-  padding: 30px 0;
+  padding-top: 30px;
   background: #F5F5FA; }
+  .achievements__title {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #323264;
+    margin-bottom: 30px; }
+  .achievements .container:after {
+    content: '';
+    display: inline-block;
+    height: 2px;
+    background-color: #E6E6F0;
+    width: 100%;
+    margin-top: 30px; }
+  .achievements #slider {
+    position: relative;
+    text-align: center;
+    top: 10px;
+    margin: 0 auto; }
+  .achievements #slides article {
+    width: 10%;
+    float: left; }
+  .achievements #slides .image {
+    width: 400%;
+    line-height: 0;
+    transition: all 800ms cubic-bezier(0.77, 0, 0.175, 1); }
+  .achievements #overflow {
+    width: 100%;
+    overflow: hidden; }
+  .achievements .image__item img {
+    width: 100%; }
+  .achievements #desktop:checked ~ #slider {
+    max-width: 1600px; }
+  .achievements .all input {
+    display: none; }
+  .achievements #switch1:checked ~ #slides .image {
+    margin-left: 0; }
+  .achievements #switch2:checked ~ #slides .image {
+    margin-left: -100%; }
+  .achievements #switch3:checked ~ #slides .image {
+    margin-left: -200%; }
+  .achievements #switch4:checked ~ #slides .image {
+    margin-left: -300%; }
+  .achievements #controls {
+    margin: -25% 0 0 0;
+    width: 100%;
+    height: 50px; }
+  .achievements #active label {
+    border-radius: 10px;
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background: rgba(211, 237, 255, 0.82); }
+    .achievements #active label:hover {
+      cursor: pointer; }
+  .achievements #active {
+    margin: 23% 0 0;
+    text-align: center; }
+  .achievements #switch1:checked ~ #active label:nth-child(1),
+  .achievements #switch2:checked ~ #active label:nth-child(2),
+  .achievements #switch3:checked ~ #active label:nth-child(3),
+  .achievements #switch4:checked ~ #active label:nth-child(4) {
+    background: #24A3FF;
+    border-color: #24A3FF !important; }
 
 @use "./../../common/variables" as *;
 .footer {
