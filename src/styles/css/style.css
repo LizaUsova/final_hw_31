@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16629,13 +16629,16 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33260,6 +33263,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -33599,7 +33605,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -33631,30 +33638,35 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50279,6 +50291,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -50421,7 +50436,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -50453,30 +50469,35 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67101,6 +67122,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -67301,7 +67325,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -67333,30 +67358,53 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+
+@use './../../common/variables' as *;
+@use "./../../common/extends" as *;
+@use './../../common/mixins' as *;
+.modal-contacts label {
+  color: #B3B3BA; }
+.modal-contacts .modal-content {
+  background: #F5F5FA;
+  box-shadow: 0 15px 80px 0 rgba(40, 40, 86, 0.5); }
+.modal-contacts__close-btn {
+  color: #F0145A; }
+.modal-contacts h3, .modal-contacts .h3 {
+  font-weight: 700; }
+.modal-contacts__subtitle {
+  color: #B3B3BA;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase; }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -83981,6 +84029,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -84119,7 +84170,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -84151,30 +84203,35 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -100799,6 +100856,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -101014,7 +101074,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -101046,30 +101107,35 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -117694,6 +117760,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -117803,7 +117872,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -117835,30 +117905,35 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 @use "./variables" as *;
 .banner, .team__img1, .team__img2, .team__img3, .team-group__img1, .team-group__img2, .team-group__img3, .team-group__img4, .team-group__img5, .team-group__img6, .member__img5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -134483,6 +134558,9 @@ h5, .h5 {
     top: -22px;
     bottom: 7px;
     border-radius: 7px; }
+
+.page {
+  overflow: hidden; }
 
 @use "./../../common/bootstrap-config" as *;
 @use "./../../common/variables" as *;
@@ -134623,7 +134701,8 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 .footer {
   background: #F5F5FA;
-  padding: 30px 0; }
+  padding: 30px 0;
+  margin-top: auto; }
   .footer-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
@@ -134655,22 +134734,27 @@ h5, .h5 {
     color: #24A3FF; }
 
 @media (max-width: 992px) {
-  .footer .container {
-    max-width: 992px; }
   .footer-contacts__wrapper {
-    justify-content: start; } }
+    justify-content: start !important; } }
 @media (max-width: 767px) {
-  .footer .container {
-    max-width: 767px; }
-  .footer-contacts__wrapper {
-    justify-content: start; } }
-@media (max-width: 684px) {
-  .footer-contacts__wrapper {
-    justify-content: center; } }
-@media (max-width: 575px) {
-  .footer-contacts__wrapper {
-    justify-content: center; }
   .footer__wrapper {
-    justify-content: center; } }
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 556px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 480px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
+@media (max-width: 320px) {
+  .footer__wrapper {
+    justify-content: center !important; }
+  .footer-contacts__wrapper {
+    justify-content: center !important; } }
 
 /*# sourceMappingURL=style.css.map */

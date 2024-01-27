@@ -1,0 +1,80 @@
+@use "./../../common/variables" as *;
+@use "./../../common/extends" as *;
+@use "./../../common/mixins" as *;
+
+.contact-form {
+  padding: 60px 0;
+
+  &__wrapper {
+    &__texts {
+      padding-right: 60px;
+      gap: 30px;
+    }
+  }
+
+  &__text {
+    font-size: $f-sm-md;
+
+    &:after {
+      content: '';
+      display: inline-block;
+      height: 4px;
+      background-color: $color-switch-bg;
+      width: 100%;
+    }
+  }
+
+    a {
+      color: $color-blue;
+    }
+
+    &__link {
+      max-width: 160px;
+      gap: 10px;
+      font-weight: $fw-bold;
+      text-transform: uppercase;
+
+      &-page {
+        font-size: $f-xxs;
+      }
+
+      &-icon {
+        font-size: $f-lg;
+      }
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+
+    &__number {
+      font-size: $f-sm-md;
+    }
+
+
+  &__box {
+    margin-left: 60px;
+
+    &-content {
+      padding: 30px;
+      background: $color-light-grey;
+      border-radius: $border-r;
+    }
+
+    &-title {
+      @extend %gradient_color;
+      font-weight: $fw-bold;
+    }
+
+    &-subtitle {
+      text-transform: uppercase;
+      color: $color-grey;
+      font-size: $f-xs;
+      font-weight: $fw-bold;
+    }
+
+    label {
+      color: $color-grey;
+    }
+  }
+}
