@@ -103,6 +103,7 @@
         </div>
     </nav>
 </header>
+
 <main>
     <div class="gradient">
         <section class="servicearticle position-relative">
@@ -129,7 +130,7 @@
                             a good candidate with experience in the field of
                             information technology in Ukraine.
                         </div>
-                        <button class="servicearticle__btn btn-custom"><a class="text-decoration-none text-white" href="#">Free consultation</a></button>
+                        <button class="servicearticle__btn btn-custom"><a class="text-decoration-none text-white" data-bs-toggle="modal" data-bs-target="#contactModal" href="#">Free consultation</a></button>
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
@@ -200,6 +201,7 @@
         </div>
     </section>
 </main>
+
 <footer class="footer">
     <div class="container">
         <div class="footer__wrapper d-flex justify-content-md-between flex-wrap justify-content-sm-center">
@@ -232,6 +234,45 @@
 
     </div>
 </footer>
+
+
+<div class="modal fade modal-contacts" id="contactModal" tabindex="-1" aria-labelledby="Contacts" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header modal-contacts__header">
+                <h3 class="modal-title modal-contacts__title" id="contacts">We would like to help you</h3>
+                <button type="button" class="btn btn-lg modal-contacts__close-btn" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+            </div>
+            <div class="modal-body modal-contacts__body">
+                <form>
+                    <div class="form-floating mb-3">
+                        <input name="user_name" type="text" class="form-control" id="floatingInput" placeholder="Name">
+                        <label for="floatingInput">Name</label>
+                    </div>
+                    <div class="form-floating mb-4">
+                        <textarea name="message" class="form-control" placeholder="Message" id="floatingTextarea2" style="height: 130px"></textarea>
+                        <label for="floatingTextarea2">Message</label>
+                    </div>
+
+                    <div class="modal-contacts__subtitle mb-3">How to answer you?</div>
+                    <div class="form-floating mb-3">
+                        <input name="phone" type="tel" class="form-control" id="phoneNumber" placeholder="Phone number">
+                        <label for="phoneNumber">Phone number</label>
+                    </div>
+                    <div class="form-floating">
+                        <input name="email" type="email" class="form-control" id="emailField" placeholder="Email">
+                        <label for="emailField">Email</label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer modal-contacts__footer">
+                <button type="button" class="btn-custom w-100">Send message</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>

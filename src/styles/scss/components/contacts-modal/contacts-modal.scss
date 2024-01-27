@@ -1,0 +1,31 @@
+@use './../../common/variables' as *;
+@use "./../../common/extends" as *;
+@use './../../common/mixins' as *;
+
+.modal-contacts {
+
+  label {
+    color: $color-grey;
+  }
+
+  .modal-content {
+    background:  $color-light-grey;
+    box-shadow: 0 15px 80px 0 rgba(40, 40, 86, 0.50);
+  }
+
+  &__close-btn {
+    color: $accent-color;
+  }
+
+  h3 {
+    font-weight: $fw-bold;
+    @extend %gradient_color;
+  }
+
+  &__subtitle {
+    color: $color-grey;
+    font-size: $f-xs;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
+  }
+}
