@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16638,7 +16638,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -33701,7 +33701,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -50564,7 +50564,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -67314,44 +67314,44 @@ h5, .h5 {
     bottom: 30px; }
 
 @use "./../../common/variables" as *;
-.servicearticle {
+.service-article {
   padding-top: 160px; }
-  .servicearticle h2, .servicearticle .h2 {
+  .service-article h2, .service-article .h2 {
     font-weight: 700; }
-  .servicearticle h4, .servicearticle .h4 {
+  .service-article h4, .service-article .h4 {
     margin-bottom: 30px;
     font-weight: 700; }
-  .servicearticle__service {
+  .service-article__service {
     margin-bottom: 30px;
     color: #fff;
     gap: 30px; }
-    .servicearticle__service:after {
+    .service-article__service:after {
       content: '';
       display: inline-block;
       height: 4px;
       background-color: #888893;
       width: 100%; }
-  .servicearticle__icon span {
+  .service-article__icon span {
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
     background-color: #fff; }
-  .servicearticle__description {
+  .service-article__description {
     font-weight: 400;
     line-height: 30px;
     font-size: 20px; }
-  .servicearticle__btn {
+  .service-article__btn {
     margin-bottom: 30px; }
-  .servicearticle__services-list {
+  .service-article__services-list {
     gap: 15px; }
-    .servicearticle__services-list li {
+    .service-article__services-list li {
       font-size: 18px; }
-      .servicearticle__services-list li::marker {
+      .service-article__services-list li::marker {
         color: #F0145A; }
 
 @use "./../../common/variables" as *;
 @media (max-width: 575px) {
-  .servicearticle h2, .servicearticle .h2 {
+  .service-article h2, .service-article .h2 {
     font-size: 30px; } }
 
 @use "./../../common/variables" as *;
@@ -67506,7 +67506,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -84368,7 +84368,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -101099,58 +101099,58 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
-.publicationarticle {
+.publication-article {
   padding-bottom: 60px; }
-  .publicationarticle__content {
+  .publication-article__content {
     gap: 30px;
     margin-bottom: 30px; }
-  .publicationarticle h5, .publicationarticle .h5 {
+  .publication-article h5, .publication-article .h5 {
     color: #323264;
     font-weight: 700; }
-  .publicationarticle h2, .publicationarticle .h2 {
+  .publication-article h2, .publication-article .h2 {
     font-weight: 700; }
-  .publicationarticle h3, .publicationarticle .h3 {
+  .publication-article h3, .publication-article .h3 {
     font-weight: 700;
     color: #323264; }
-  .publicationarticle h4, .publicationarticle .h4 {
+  .publication-article h4, .publication-article .h4 {
     font-weight: 700;
     color: #323264; }
-  .publicationarticle__update {
+  .publication-article__update {
     font-size: 12px;
     color: #B3B3BA;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    .publicationarticle__update:after {
+    .publication-article__update:after {
       content: '';
       display: inline-block;
       height: 4px;
       background-color: #E6E6F0;
       width: 100%; }
-  .publicationarticle__description {
+  .publication-article__description {
     line-height: 26px;
     font-weight: 400; }
-  .publicationarticle__image-description {
+  .publication-article__image-description {
     font-size: 14px;
     color: #B3B3BA; }
-  .publicationarticle__image1 {
+  .publication-article__image1 {
     margin-bottom: 30px; }
-  .publicationarticle ol li {
+  .publication-article ol li {
     font-size: 18px;
     line-height: 26px; }
-    .publicationarticle ol li::marker {
+    .publication-article ol li::marker {
       color: #F0145A;
       font-weight: 700; }
-  .publicationarticle__icon {
+  .publication-article__icon {
     gap: 10px; }
-    .publicationarticle__icon a {
+    .publication-article__icon a {
       padding: 5px 10px;
       color: #006CCF;
       display: inline-block;
       border-radius: 12px;
       background-color: #F5F5FA;
       font-size: 18px; }
-  .publicationarticle__card:after {
+  .publication-article__card:after {
     content: '';
     display: inline-block;
     height: 2px;
@@ -101160,17 +101160,17 @@ h5, .h5 {
 
 @use "./../../common/variables" as *;
 @media (max-width: 767px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 550px; } }
 @media (max-width: 556px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 500px; }
-  .publicationarticle h2, .publicationarticle .h2 {
+  .publication-article h2, .publication-article .h2 {
     font-size: 30px; }
-  .publicationarticle h3, .publicationarticle .h3 {
+  .publication-article h3, .publication-article .h3 {
     font-size: 20px; } }
 @media (max-width: 480px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 315px; } }
 
 @use "./../../common/variables" as *;
@@ -101307,7 +101307,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -118137,7 +118137,7 @@ h5, .h5 {
   background-repeat: no-repeat;
   background-position: center center; }
 
-.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .servicearticle h2, .servicearticle .h2, .modal-contacts h3, .modal-contacts .h3, .publicationarticle h2, .publicationarticle .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
+.header .navbar-nav a:hover, .values__catalog li button:hover, .values__catalog li button:active, .values__catalog li button:focus, .services h2, .services .h2, .services__link:hover, .team__description-text, .team__description a:hover, .publications__link a:hover, .publications h2, .publications .h2, .service-article h2, .service-article .h2, .modal-contacts h3, .modal-contacts .h3, .publication-article h2, .publication-article .h2, .team-group h2, .team-group .h2, .member h2, .member .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

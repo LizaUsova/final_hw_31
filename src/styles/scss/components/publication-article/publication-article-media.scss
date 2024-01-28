@@ -1,6 +1,6 @@
 @use "./../../common/variables" as *;
 
-.publicationarticle {
+.publication-article {
   @media (max-width: 767px) {
     &__image {
       max-width: 550px;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @use "./variables" as *;
-.header .navbar-nav a:hover, .publicationarticle h2, .publicationarticle .h2, .publications__link a:hover, .publications h2, .publications .h2 {
+.header .navbar-nav a:hover, .publication-article h2, .publication-article .h2, .publications__link a:hover, .publications h2, .publications .h2 {
   background: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -16727,58 +16727,58 @@ h5, .h5 {
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;
 @use "./../../common/mixins" as *;
-.publicationarticle {
+.publication-article {
   padding-bottom: 60px; }
-  .publicationarticle__content {
+  .publication-article__content {
     gap: 30px;
     margin-bottom: 30px; }
-  .publicationarticle h5, .publicationarticle .h5 {
+  .publication-article h5, .publication-article .h5 {
     color: #323264;
     font-weight: 700; }
-  .publicationarticle h2, .publicationarticle .h2 {
+  .publication-article h2, .publication-article .h2 {
     font-weight: 700; }
-  .publicationarticle h3, .publicationarticle .h3 {
+  .publication-article h3, .publication-article .h3 {
     font-weight: 700;
     color: #323264; }
-  .publicationarticle h4, .publicationarticle .h4 {
+  .publication-article h4, .publication-article .h4 {
     font-weight: 700;
     color: #323264; }
-  .publicationarticle__update {
+  .publication-article__update {
     font-size: 12px;
     color: #B3B3BA;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1px; }
-    .publicationarticle__update:after {
+    .publication-article__update:after {
       content: '';
       display: inline-block;
       height: 4px;
       background-color: #E6E6F0;
       width: 100%; }
-  .publicationarticle__description {
+  .publication-article__description {
     line-height: 26px;
     font-weight: 400; }
-  .publicationarticle__image-description {
+  .publication-article__image-description {
     font-size: 14px;
     color: #B3B3BA; }
-  .publicationarticle__image1 {
+  .publication-article__image1 {
     margin-bottom: 30px; }
-  .publicationarticle ol li {
+  .publication-article ol li {
     font-size: 18px;
     line-height: 26px; }
-    .publicationarticle ol li::marker {
+    .publication-article ol li::marker {
       color: #F0145A;
       font-weight: 700; }
-  .publicationarticle__icon {
+  .publication-article__icon {
     gap: 10px; }
-    .publicationarticle__icon a {
+    .publication-article__icon a {
       padding: 5px 10px;
       color: #006CCF;
       display: inline-block;
       border-radius: 12px;
       background-color: #F5F5FA;
       font-size: 18px; }
-  .publicationarticle__card:after {
+  .publication-article__card:after {
     content: '';
     display: inline-block;
     height: 2px;
@@ -16788,17 +16788,17 @@ h5, .h5 {
 
 @use "./../../common/variables" as *;
 @media (max-width: 767px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 550px; } }
 @media (max-width: 556px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 500px; }
-  .publicationarticle h2, .publicationarticle .h2 {
+  .publication-article h2, .publication-article .h2 {
     font-size: 30px; }
-  .publicationarticle h3, .publicationarticle .h3 {
+  .publication-article h3, .publication-article .h3 {
     font-size: 20px; } }
 @media (max-width: 480px) {
-  .publicationarticle__image {
+  .publication-article__image {
     max-width: 315px; } }
 
 @use "./../../common/variables" as *;

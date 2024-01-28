@@ -16686,22 +16686,24 @@ h5, .h5 {
   .header .navbar-toggler-icon {
     color: #fff; }
 
-.dark-text .header-top__lang-title {
-  color: #B3B3BA !important; }
-.dark-text .header-top__lang input:checked + span {
-  background: #F0145A !important; }
-.dark-text .header-top__phone a {
-  color: #B3B3BA !important; }
-.dark-text .header-top__socials a i {
-  color: #B3B3BA !important; }
-.dark-text .header-top__address a {
-  color: #B3B3BA !important; }
-.dark-text .header-top__wrapper > div:not(:last-child)::after {
-  background: #B3B3BA; }
-.dark-text .navbar-nav a {
-  color: #24A3FF !important; }
-.dark-text .navbar-toggler-icon {
-  color: #323264 !important; }
+.dark-text {
+  z-index: 3; }
+  .dark-text .header-top__lang-title {
+    color: #B3B3BA !important; }
+  .dark-text .header-top__lang input:checked + span {
+    background: #F0145A !important; }
+  .dark-text .header-top__phone a {
+    color: #B3B3BA !important; }
+  .dark-text .header-top__socials a i {
+    color: #B3B3BA !important; }
+  .dark-text .header-top__address a {
+    color: #B3B3BA !important; }
+  .dark-text .header-top__wrapper > div:not(:last-child)::after {
+    background: #B3B3BA; }
+  .dark-text .navbar-nav a {
+    color: #24A3FF !important; }
+  .dark-text .navbar-toggler-icon {
+    color: #323264 !important; }
 
 @media (max-width: 991px) {
   .header {
@@ -16722,8 +16724,9 @@ h5, .h5 {
   .header .navbar-brand svg {
     max-width: 100px; } }
 
-.dark-text .navbar-nav {
-  background: rgba(255, 255, 255, 0.9); }
+@media (max-width: 991px) {
+  .dark-text .navbar-nav {
+    background: rgba(255, 255, 255, 0.9); } }
 
 @use "./../../common/variables" as *;
 @use "./../../common/extends" as *;

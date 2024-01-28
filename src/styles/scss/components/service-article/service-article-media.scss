@@ -1,6 +1,6 @@
 @use "./../../common/variables" as *;
 
-.servicearticle {
+.service-article {
   @media (max-width: 575px) {
     h2 {
       font-size: $f-ml;
