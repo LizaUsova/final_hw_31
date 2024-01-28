@@ -15,7 +15,7 @@
 
   &__service {
     margin-bottom: 30px;
-    color: #fff;
+    color: $color-white;
     gap: 30px;
 
     &:after {
@@ -31,7 +31,7 @@
     display: inline-block;
     padding: 10px;
     border-radius: 10px;
-    background-color: #fff;
+    background-color: $color-white;
   }
 
   &__description {

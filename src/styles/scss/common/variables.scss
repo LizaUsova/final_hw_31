@@ -5,6 +5,7 @@ $header_height: 150px;
 // colors
 $color-gradient: -webkit-linear-gradient(90deg, #F0145A 0.84%, #EF8080 99.96%);
 $accent-color: #F0145A;
+$color-white: #fff;
 $color-light-grey: #F5F5FA;
 $color-grey: #B3B3BA;
 $color-dark-grey: #46466E;
@@ -16,12 +17,6 @@ $color-border-after: #888893;
 $color-btn-shadow: rgba(36, 163, 255, 0.50);
 $color-logo-dark: #323264;
 $color-switch-bg: #E6E6F0;
-
-
-$color-black: #000;
-$color-white: #fff;
-
-
 
 // for fonts
 $s-serif: sans-serif;
@@ -47,5 +42,4 @@ $fs-h4: $f-md;
 $fs-h5: $f-sm;
 
 //buttons
-
 $border-r: 12px;

@@ -48,23 +48,52 @@
     margin-bottom: -40px;
     gap: 15px;
 
+
     a {
       text-transform: lowercase;
+      position: relative;
+      font-weight: $fw-bold;
+      color: $color-white;
 
       &:hover {
         @extend %gradient_color;
+        transform: scaleX(1);
+        transition: transform 0.25s;
+        transform-origin: left;
+      }
+
+      &::after {
+        content:'';
+        width: 100%;
+        height: 2px;
+        background-color: $accent-color;
+        position: absolute;
+        left: 0;
+        bottom: -5px;
+        transform: scaleX(0);
+        transform-origin: right;
+        z-index: 5;
       }
     }
+  }
+  
+  .navbar-toggler-icon {
+    color: $color-white;
   }
 }
 
 
   .dark-text {
+    z-index: 3;
     .header {
       &-top {
         &__lang {
           &-title {
             color: $color-grey !important;
+          }
+
+          input:checked + span {
+            background: $accent-color!important;
           }
         }
 
@@ -89,6 +118,10 @@
     }
 
     .navbar-nav a {
-    color:$color-blue !important;;
+    color:$color-blue!important;
+    }
+
+    .navbar-toggler-icon {
+      color: $color-logo-dark!important;
     }
   }
