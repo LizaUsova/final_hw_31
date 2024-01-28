@@ -4,9 +4,9 @@
   padding-bottom: 30px;
 
   &__title {
-    text-transform: uppercase;
-    font-weight: $fw-bold;
     margin-bottom: 30px;
+    font-weight: $fw-bold;
+    text-transform: uppercase;
   }
 
   &__img {
@@ -16,10 +16,9 @@
     }
 
     &:hover {
+      z-index: 2;
       transform: scale(1.1);
       box-shadow: 0 0 10px $color-grey;
-
-      z-index: 2;
     }
   }
 }

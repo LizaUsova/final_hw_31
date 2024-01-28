@@ -7,6 +7,7 @@
 
   h2 {
     @extend %gradient_color;
+
     font-weight: $fw-bold;
   }
 
@@ -22,15 +23,15 @@
 
   &__item {
     &_number {
-      color: $accent-color;
+      margin-left: 10px;
       font-size: $f-lg;
       font-weight: $fw-bold;
-      margin-left: 10px;
+      color: $accent-color;
     }
 
     &_icon {
-      color: $accent-color;
       font-size: 26px;
+      color: $accent-color;
     }
   }
 }

@@ -1,16 +1,16 @@
 .header {
-  @media (max-width: 991px) {
+  @media (width <= 991px) {
     padding-top: 0;
 
     &-top {
-      margin: 0 0 15px 0;
+      margin: 0 0 15px;
       padding: 10px 0;
       background: rgba(245, 245, 250, 0.2);
 
       &__wrapper {
         justify-content: space-between!important;
 
-        & > div:after {
+        & > div::after {
           display: none!important;
         }
       }
@@ -26,7 +26,7 @@
     }
   }
 
-  @media (max-width: 480px) {
+  @media (width <= 480px) {
     .navbar-brand svg{
       max-width: 100px;
     }
@@ -35,7 +35,7 @@
 
 .dark-text {
   .navbar-nav {
-    @media (max-width: 991px) {
+    @media (width <= 991px) {
       background: rgba(255, 255, 255, 0.9);
     }
   }

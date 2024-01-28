@@ -3,24 +3,26 @@
 
 .banner {
   @include bg_img_center(get_path('svg/h.svg'), contain);
-  padding-top: $header_height;
+
   height: 100vh;
   min-height: 400px;
+  padding-top: $header_height;
 
   h1 {
-    left: 50%;
     top: 50%;
+    left: 50%;
     transform: translate(-50%, -50%);
-    color: $white;
-    text-align: center;
+
     font-weight: $fw-bold;
+    color: $color-white;
+    text-align: center;
     text-transform: capitalize;
   }
 
 
   &__scroll {
+    bottom: 30px;
     left: 50%;
     transform: translateX(-50%);
-    bottom: 30px;
   }
 }

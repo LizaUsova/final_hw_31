@@ -3,15 +3,16 @@
 @use "./../../common/mixins" as *;
 
 .publications {
-  background: $color-light-grey;
   padding-top: 30px;
+  background: $color-light-grey;
 
   &__link a {
     margin-bottom: 10px;
+
     font-size: $f-xs;
-    text-transform: uppercase;
-    color: $color-blue;
     font-weight: $fw-bold;
+    color: $color-blue;
+    text-transform: uppercase;
 
     &:hover {
       @extend %gradient_color;
@@ -20,46 +21,53 @@
 
   h2 {
     @extend %gradient_color;
-    font-weight: $fw-bold;
+
     margin-bottom: 30px;
+    font-weight: $fw-bold;
   }
 
   h5 {
-    color: $color-blue;
-    font-weight: $fw-bold;
     margin-bottom: 15px;
+    font-weight: $fw-bold;
+    color: $color-blue;
   }
 
   &__update {
     font-size: $f-xxs;
-    color: $color-grey;
     font-weight: $fw-bold;
+    color: $color-grey;
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 4px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 4px;
+
+      background-color: $color-switch-bg;
     }
   }
 
   &__description {
     font-size: $f-xs;
-    line-height: 22px;
     font-weight: $fw-base;
+    line-height: 22px;
   }
 
   .container {
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 2px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 2px;
       margin-top: 30px;
+
+      background-color: $color-switch-bg;
     }
   }
 

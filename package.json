@@ -15,12 +15,11 @@
     "scss-compile-team-entry": "sass --watch ./src/styles/scss/team-entry.scss:./src/styles/css/team-entry.css",
     "scss-compile-about-us": "sass --watch ./src/styles/scss/about-us.scss:./src/styles/css/about-us.css",
     "scss-compile-contact": "sass --watch ./src/styles/scss/contact.scss:./src/styles/css/contact.css"
-
   },
   "author": "Yelyzaveta Usova",
   "license": "ISC",
   "devDependencies": {
-    "stylelint": "^16.1.0",
+    "stylelint": "^15.11.0",
     "stylelint-config-clean-order": "^5.4.0",
     "stylelint-config-standard-scss": "^13.0.0"
   },

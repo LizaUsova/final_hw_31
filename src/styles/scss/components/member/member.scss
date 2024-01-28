@@ -7,15 +7,17 @@
 
   h2 {
     @extend %gradient_color;
-    font-weight: $fw-bold;
+
     margin-bottom: 15px;
+    font-weight: $fw-bold;
   }
 
   &__img5 {
     @include bg_img_center(get_path('img/team/kobzar.jpg'));
-    border-radius: 12px;
+
     width: 350px;
     height: 350px;
+    border-radius: 12px;
   }
 
   &__contacts {
@@ -30,23 +32,28 @@
       content: '';
 
       display: block;
-      margin-left: 6px;
+
       width: 6px;
-      border-radius: 50%;
       height: 6px;
+      margin-left: 6px;
+
       background: $color-switch-bg;
+      border-radius: 50%;
     }
   }
 }
 
   &__socials {
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 4px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 4px;
       margin-bottom: 30px;
+
+      background-color: $color-switch-bg;
     }
   }
   
@@ -66,20 +73,20 @@
     font-size: $f-xs;
     font-weight: $fw-bold;
     line-height: normal;
-    letter-spacing: 1px;
-    text-transform: uppercase;
     color: $color-logo-dark;
+    text-transform: uppercase;
+    letter-spacing: 1px;
   }
 
   &__description-job {
-    color: $color-grey;
-    font-weight: $fw-base;
     font-size: $f-xs;
+    font-weight: $fw-base;
     line-height: 22px;
+    color: $color-grey;
   }
 
   &__mail, &__social {
-    color: $color-blue;
     font-size: $f-sm;
+    color: $color-blue;
   }
 }

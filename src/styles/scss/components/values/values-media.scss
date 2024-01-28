@@ -2,7 +2,7 @@
 @use "./../../common/bootstrap-config" as *;
 
 .values {
-  @media (max-width: 1200px) {
+  @media (width <= 1200px) {
     &__approach {
       &-description {
         font-size: 18px;
@@ -11,17 +11,19 @@
     }
   }
 
-  @media (max-width: 992px) {
+  @media (width <= 992px) {
     &__approach {
       padding-left: 15px;
     }
 
     &__catalog {
-      border-right: 0!important;
-      border-bottom: $border-width solid $border-color!important;
+      justify-content: space-between!important;
+
       margin-bottom: 60px;
       padding-bottom: 60px;
-      justify-content: space-between!important;
+
+      border-right: 0!important;
+      border-bottom: $border-width solid $border-color!important;
 
         li {
           font-size: 26px;
@@ -29,17 +31,18 @@
       }
     }
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &__catalog {
-      padding: 0 15px 30px 15px!important;
       margin-bottom: 30px;
+      padding: 0 15px 30px!important;
     }
   }
 
-  @media (max-width: 556px) {
+  @media (width <= 556px) {
     padding-bottom: 30px;
+
     &__approach {
-      padding: 0 15px 0 15px!important;
+      padding: 0 15px!important;
     }
   }
 }

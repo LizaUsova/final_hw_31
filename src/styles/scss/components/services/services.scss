@@ -7,28 +7,29 @@
 
   h2 {
     @extend %gradient_color;
-    font-weight: $fw-bold;
+
     margin-bottom: 60px;
+    font-weight: $fw-bold;
   }
 
   &__service {
-    color: $white;
-    gap: 30px;
     flex-direction: column;
+    gap: 30px;
+    color: $white;
   }
 
   &__icon span {
     display: inline-block;
     padding: 10px;
-    border-radius: 10px;
     background-color: $white;
+    border-radius: 10px;
   }
 
   &__title a {
-    color: $color-blue;
+    margin: 0;
     font-size: $fs-h4;
     font-weight: $fw-bold;
-    margin: 0;
+    color: $color-blue;
   }
 
   &__link {

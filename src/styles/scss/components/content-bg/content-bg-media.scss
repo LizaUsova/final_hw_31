@@ -2,7 +2,7 @@
 @use "./../../common/mixins" as *;
 
 .content {
-  @media (max-width: 1440px) {
+  @media (width <= 1440px) {
     &-bg {
       &__img {
         height: 440px;
@@ -10,7 +10,7 @@
     }
   }
 
-  @media (max-width: 1280px) {
+  @media (width <= 1280px) {
     &-bg {
       &__img {
         height: 340px;
@@ -18,7 +18,7 @@
     }
   }
 
-  @media (max-width: 992px) {
+  @media (width <= 992px) {
     &-bg {
       &__img {
         height: 285px;
@@ -26,7 +26,7 @@
     }
   }
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &-bg {
       &__img {
         height: 235px;
@@ -34,7 +34,7 @@
     }
   }
 
-  @media (max-width: 375px) {
+  @media (width <= 375px) {
     &-bg {
       &__img {
         height: 115px;

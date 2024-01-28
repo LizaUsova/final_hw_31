@@ -11,12 +11,13 @@
   }
 
    h5 {
-     color: $color-logo-dark;
      font-weight: $fw-bold;
+     color: $color-logo-dark;
    }
 
   h2 {
     @extend %gradient_color;
+
     font-weight: $fw-bold;
   }
 
@@ -32,23 +33,26 @@
 
   &__update {
     font-size: $f-xxs;
-    color: $color-grey;
     font-weight: $fw-bold;
+    color: $color-grey;
     text-transform: uppercase;
     letter-spacing: 1px;
 
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 4px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 4px;
+
+      background-color: $color-switch-bg;
     }
   }
 
   &__description {
-    line-height: 26px;
     font-weight: $fw-base;
+    line-height: 26px;
   }
 
   &__image {
@@ -67,8 +71,8 @@
     line-height: 26px;
 
       &::marker {
-        color: $accent-color;
         font-weight: $fw-bold;
+        color: $accent-color;
       }
     }
 
@@ -76,23 +80,29 @@
     gap: 10px;
 
     a {
-      padding: 5px 10px;
-      color: $color-dark-blue;
       display: inline-block;
-      border-radius: 12px;
-      background-color: $color-light-grey;
+
+      padding: 5px 10px;
+
       font-size: $f-sm-sm;
+      color: $color-dark-blue;
+
+      background-color: $color-light-grey;
+      border-radius: 12px;
     }
   }
 
   &__card {
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 2px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 2px;
       margin-bottom: 30px;
+
+      background-color: $color-switch-bg;
     }
   }
 }

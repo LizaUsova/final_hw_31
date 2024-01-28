@@ -5,34 +5,38 @@
   background: $color-light-grey;
 
   &__title {
+    margin-bottom: 30px;
+
     font-size: $f-xs;
-    text-transform: uppercase;
     font-weight: $fw-bold;
     color: $color-logo-dark;
-    margin-bottom: 30px;
+    text-transform: uppercase;
   }
 
   .container {
-    &:after {
+    &::after {
       content: '';
+
       display: inline-block;
-      height: 2px;
-      background-color: $color-switch-bg;
+
       width: 100%;
+      height: 2px;
       margin-top: 30px;
+
+      background-color: $color-switch-bg;
     }
   }
 
   #slider {
     position: relative;
-    text-align: center;
     top: 10px;
     margin: 0 auto;
+    text-align: center;
   }
 
   #slides article{
-    width: 10%;
     float: left;
+    width: 10%;
   }
 
   #slides .image{
@@ -42,8 +46,8 @@
   }
 
   #overflow{
-    width: 100%;
     overflow: hidden;
+    width: 100%;
   }
 
   .image__item img{
@@ -75,17 +79,19 @@
   }
 
   #controls{
-    margin: -25% 0 0 0;
     width: 100%;
     height: 50px;
+    margin: -25% 0 0;
   }
 
   #active label{
-    border-radius: 10px;
     display: inline-block;
+
     width: 15px;
     height: 15px;
+
     background: $color-light_blue;
+    border-radius: 10px;
 
     &:hover {
       cursor: pointer;

@@ -1,13 +1,13 @@
 @use "./../../common/variables" as *;
 
 .team {
-  @media (max-width: 992px) {
+  @media (width <= 992px) {
     .container {
       max-width: 992px;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &__description {
       &-text {
         font-size: $f-md;
@@ -19,7 +19,7 @@
     }
   }
 
-  @media (max-width: 556px) {
+  @media (width <= 556px) {
     &__description {
       &-text {
         font-size: $f-md;
@@ -29,8 +29,5 @@
     &__indicator {
       margin-bottom: -10px !important;
     }
-  }
-
-  @media (max-width: 480px) {
   }
 }

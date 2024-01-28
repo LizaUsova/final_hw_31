@@ -1,24 +1,26 @@
 @use "./../../common/variables" as *;
 
 .footer {
-  background: $color-light-grey;
-  padding: 30px 0;
   margin-top: auto;
+  padding: 30px 0;
+  background: $color-light-grey;
 
   &-contacts__wrapper > div:not(:last-child) {
     display: flex;
     align-items: center;
     margin-right: 6px;
 
-    &:after {
+    &::after {
       content: '';
 
       display: block;
-      margin-left: 6px;
+
       width: 6px;
-      border-radius: 50%;
       height: 6px;
+      margin-left: 6px;
+
       background: $color-grey;
+      border-radius: 50%;
     }
   }
 
@@ -30,14 +32,14 @@
     &__address-link {
       font-size: $f-xxs;
       font-weight: $fw-bold;
-      letter-spacing: 1px;
       color: $color-blue;
       text-transform: uppercase;
+      letter-spacing: 1px;
     }
 
     &__socials {
-      color: $color-blue;
       font-size: $f-lg;
+      color: $color-blue;
     }
 
     &__phone {

@@ -1,11 +1,11 @@
 .footer {
-  @media (max-width: 992px) {
+  @media (width <= 992px) {
     &-contacts__wrapper {
       justify-content: start !important;
     }
   }
 
-  @media (max-width: 767px) {
+  @media (width <= 767px) {
     &__wrapper {
       justify-content: center !important;
     }
@@ -15,17 +15,7 @@
     }
   }
 
-  @media (max-width: 556px) {
-    &__wrapper {
-      justify-content: center !important;
-    }
-
-    &-contacts__wrapper {
-      justify-content: center!important;
-    }
-  }
-
-  @media (max-width: 480px) {
+  @media (width <= 556px) {
     &__wrapper {
       justify-content: center !important;
     }
@@ -35,7 +25,17 @@
     }
   }
 
-  @media (max-width: 320px) {
+  @media (width <= 480px) {
+    &__wrapper {
+      justify-content: center !important;
+    }
+
+    &-contacts__wrapper {
+      justify-content: center!important;
+    }
+  }
+
+  @media (width <= 320px) {
     &__wrapper {
       justify-content: center !important;
     }

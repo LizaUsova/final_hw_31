@@ -6,8 +6,8 @@
 
 
   &__catalog {
-    padding-right: 60px;
     gap: 30px;
+    padding-right: 60px;
 
       li {
         font-size: 35px;
@@ -18,6 +18,7 @@
 
           &:hover, &:active, &:focus {
             @extend %gradient_color;
+
             transition: 0.3s;
           }
         }
@@ -33,9 +34,9 @@
       line-height: 40px;
 
       h3 {
+        margin-bottom: 30px;
         font-weight: $fw-bold;
         line-height: normal;
-        margin-bottom: 30px;
       }
     }
   }

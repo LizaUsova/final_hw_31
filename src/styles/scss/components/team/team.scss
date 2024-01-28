@@ -24,31 +24,32 @@
   &__description {
       &-text {
         @extend %gradient_color;
-        font-weight: $fw-bold;
-        font-size: $f-lg;
-        line-height: normal;
+
         margin-bottom: 30px;
+        font-size: $f-lg;
+        font-weight: $fw-bold;
+        line-height: normal;
       }
 
     &-name {
-      color: $color-grey;
-      font-weight: $fw-bold;
-      font-size: $f-xs;
       margin-bottom: 6px;
+      font-size: $f-xs;
+      font-weight: $fw-bold;
+      color: $color-grey;
     }
 
     &-job {
-      color: $color-grey;
-      font-weight: $fw-base;
       font-size: $f-xs;
+      font-weight: $fw-base;
+      color: $color-grey;
     }
 
     a {
-      color: $color-blue;
       font-size: $f-xs;
-      letter-spacing: 1px;
       font-weight: $fw-bold;
+      color: $color-blue;
       text-transform: uppercase;
+      letter-spacing: 1px;
 
       &:hover {
         @extend %gradient_color;
